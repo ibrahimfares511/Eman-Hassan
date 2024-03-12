@@ -5,17 +5,13 @@ tsParticles.load("tsparticles", {
 	interactivity: {
 		detectsOn: "canvas",
 		events: {
-			onClick: {
-				enable: true,
-				mode: "push",
-			},
 			onHover: {
 				enable: true,
 				mode: "bubble",
 				parallax: {
 					enable: true,
-					force: 50,
-					smooth: 20,
+					force: 80,
+					smooth: 10,
 				},
 			},
 			resize: true,
@@ -27,9 +23,6 @@ tsParticles.load("tsparticles", {
 				opacity: 0.5,
 				size: 30,
 				speed: 5,
-			},
-			push: {
-				quantity: 5,
 			},
 		},
 	},
@@ -49,13 +42,13 @@ tsParticles.load("tsparticles", {
 		},
 		move: {
 			attract: {
-				enable: true,
+				enable: false,
 				rotateX: 600,
 				rotateY: 1200,
 			},
-			bounce: true,
+			bounce: false,
 			direction: "none",
-			enable: true,
+			enable: false,
 			outMode: "bounce",
 			random: false,
 			speed: 0.2,
