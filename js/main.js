@@ -3,7 +3,7 @@
 const menuToggleBtn = document.querySelector("#menu__toggle__btn");
 const menuBtn = document.querySelector("#menu__btns");
 const mainNavbar = document.querySelector("#main__navbar");
-const myBarIndicator = document.getElementById("myBar");
+const myBarIndicator = document.querySelector("#myBar");
 // ============ All Variables ============
 
 // ============ All Functions ============
