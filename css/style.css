@@ -58,8 +58,8 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	backdrop-filter: blur(3px);
 	transition: var(--trans-dur) var(--trans-timing);
+	z-index: 9;
 }
 
 nav.scrolling {
@@ -99,7 +99,7 @@ nav .progress-indicator .progress-bar {
 
 /* Start Switch Theme Button */
 .switch__label {
-	width: 100px;
+	width: 85px;
 	height: 40px;
 	position: relative;
 	display: block;
@@ -137,7 +137,7 @@ nav .progress-indicator .progress-bar {
 }
 
 .switch__label svg.moon {
-	left: 70px;
+	left: 55px;
 	fill: #7e7e7e;
 	transition: 0.3s;
 }
@@ -154,7 +154,7 @@ nav .progress-indicator .progress-bar {
 }
 
 .switch__theme:checked + .switch__label:after {
-	left: 94px;
+	left: 80px;
 	transform: translateX(-100%);
 	background: linear-gradient(180deg, #777, #3a3a3a);
 }
@@ -234,6 +234,7 @@ header .buttons a {
 	color: hsla(var(--hue), 10%, 90%);
 	width: 160px;
 	border-radius: 5px;
+	border: 2px solid transparent;
 	text-align: center;
 	font-size: 0.8rem;
 	align-items: center;
@@ -246,12 +247,25 @@ header .buttons a:first-child {
 	background: var(--secondary-color);
 }
 
-header .buttons a:hover {
-	transform: scale(1.03);
+header .buttons a:first-child:hover {
+	background: transparent;
+	border: 2px solid var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+header .buttons a:last-child:hover {
+	background: transparent;
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
 }
 
 /* Responsive */
 @media screen and (max-width: 767.98px) {
+	header {
+		width: auto;
+		height: auto;
+	}
+
 	.navbar .brand {
 		flex-grow: 1;
 		justify-content: space-between;
@@ -271,11 +285,13 @@ header .buttons a:hover {
 		transform: scale(0) translateY(-100px);
 		opacity: 0;
 		transition: var(--trans-dur) var(--trans-timing);
+		position: absolute;
 	}
 
 	header .navbar .buttons.opened {
 		transform: scale(1) translateY(0);
 		opacity: 1;
+		position: relative;
 	}
 
 	header .navbar .buttons a {
@@ -289,6 +305,11 @@ main {
 	font-family: "Kufam", sans-serif;
 	direction: rtl;
 	text-align: right;
+}
+
+main .main-image img {
+	width: 100%;
+	max-width: 500px;
 }
 
 .main-content {
@@ -309,6 +330,20 @@ main {
 	font-weight: 600;
 	width: fit-content;
 	margin-bottom: 20px;
+	position: relative
+}
+
+.main-content h1::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	transform: translateX(-50%) skew(10deg);
+	width: 80%;
+	height: 80%;
+	background-color: #1be1d0;
+	z-index: -1;
 }
 
 .main-content svg {
@@ -325,9 +360,7 @@ main {
 	width: calc(100% + 60px);
 	opacity: 1;
 	transform: translate(-50%, -50%);
-	/* transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
-	transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); */
-	animation: drawn 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+	animation: drawn 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
 	z-index: -1;
 }
 
@@ -353,6 +386,25 @@ main {
 
 .main-content .buttons a {
 	font-size: 1rem
+}
+
+@media screen and (max-width: 767.98px) {
+	main {
+		padding-top: 90px;
+	}
+
+	main .main-image {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	main .main-image img {
+		max-width: 400px;
+	}
+
+	.main-content {
+		align-items: center;
+	}
 }
 
 /* ENd Main Section */
