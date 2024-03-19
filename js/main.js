@@ -4,8 +4,10 @@ const header = document.querySelector("header");
 const menuToggleBtn = document.querySelector("#menu__toggle__btn");
 const menuBtn = document.querySelector("#menu__btns");
 const mainNavbar = document.querySelector("#main__navbar");
-const mainImage = document.querySelector(".main-image");
 const myBarIndicator = document.querySelector("#myBar");
+const themeButton = document.querySelector("#theme__button");
+const mainImage = document.querySelector(".main-image");
+const localTheme = window.localStorage.getItem("mrs-eman-theme") || "light";
 // ============ All Variables ============
 
 // ============ All Functions ============
@@ -34,6 +36,20 @@ const scrollWindow = (e) => {
 	}
 };
 
+// Toggle Theme
+const toggleTheme = (e) => {
+	let myButton = e.target.closest("button");
+
+	myButton.dataset.theme = myButton.dataset.theme === "dark" ? "light" : "dark";
+	document.body.dataset.theme = myButton.dataset.theme;
+	window.localStorage.setItem("mrs-eman-theme", myButton.dataset.theme);
+};
+
+const checkTheme = () => {
+	themeButton.dataset.theme = localTheme;
+	document.body.dataset.theme = localTheme;
+};
+
 // Move Image When Mouse Move
 const moveImage = (e) => {
 	let h = header.clientHeight;
@@ -47,6 +63,8 @@ const moveImage = (e) => {
 
 // ============ Handel All Function ============
 menuToggleBtn.addEventListener("click", toggleNavbarMenu);
+themeButton.addEventListener("click", toggleTheme);
 window.addEventListener("scroll", scrollWindow);
 header.addEventListener("mousemove", moveImage);
+checkTheme();
 // ============ Handel All Function ============

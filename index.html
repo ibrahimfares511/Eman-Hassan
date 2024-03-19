@@ -21,10 +21,7 @@
   <header>
 
     <!-- Start Navbar -->
-    <nav id="main__navbar" dir="rtl">
-      <div class="progress-indicator">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
+    <nav id="main__navbar">
       <div class="container">
         <div class="navbar">
           <div class="brand">
@@ -32,61 +29,52 @@
             <a href="#"> <img src="./images/logo.png" class="logo" /> </a>
             <!-- Choose Theme -->
             <div class="theme">
-              <input type="checkbox" id="switch__theme" class="switch__theme" />
-              <label for="switch__theme" class="switch__label">
-                <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496" xml:space="preserve"
-                  fill="white">
-
-                  <rect x="152.994" y="58.921" transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
-                    width="40.001" height="16" />
-                  <rect x="46.9" y="164.979" transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
-                    width="40.001" height="16" />
-                  <rect x="46.947" y="315.048" transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
-                    width="40.001" height="16" />
-
-                  <rect x="164.966" y="409.112" transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
-                    width="16" height="39.999" />
-
-                  <rect x="303.031" y="421.036" transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
-                    width="40.001" height="16" />
-
-                  <rect x="409.088" y="315.018" transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
-                    width="40.001" height="16" />
-
-                  <rect x="409.054" y="165.011" transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
-                    width="40.001" height="16" />
-                  <rect x="315.001" y="46.895" transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
-                    width="16" height="39.999" />
-                  <path d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
-				c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z" />
-                  <rect x="240" width="16" height="72" />
-                  <rect x="62.097" y="90.096" transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
-                    width="71.999" height="16" />
-                  <rect y="240" width="72" height="16" />
-
-                  <rect x="90.091" y="361.915" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
-                    width="16" height="71.999" />
-                  <rect x="240" y="424" width="16" height="72" />
-
-                  <rect x="361.881" y="389.915" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
-                    width="71.999" height="16" />
-                  <rect x="424" y="240" width="72" height="16" />
-                  <rect x="389.911" y="62.091" transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
-                    width="16" height="71.999" />
+              <button id="theme__button" class="switch__button" data-theme="light">
+                <svg width="24" height="24" fill="none" class="sun">
+                  <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" fill="currentColor" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M12 4v1M18 6l-1 1M20 12h-1M18 18l-1-1M12 19v1M7 17l-1 1M5 12H4M7 7 6 6" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <svg version="1.1" class="moon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.739 49.739"
-                  xml:space="preserve">
-                  <path d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
-                        c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
-                        c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
-                        C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
-                        c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
-                        c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z" />
+                <svg width="24" height="24" fill="none" class="moon">
+                  <path
+                    d="M18 15.63c-.977.52-1.945.481-3.13.481A6.981 6.981 0 0 1 7.89 9.13c0-1.185-.04-2.153.481-3.13C6.166 7.174 5 9.347 5 12.018A6.981 6.981 0 0 0 11.982 19c2.67 0 4.844-1.166 6.018-3.37ZM16 5c0 2.08-.96 4-3 4 2.04 0 3 .92 3 3 0-2.08.96-3 3-3-2.04 0-3-1.92-3-4Z"
+                    fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
                 </svg>
-              </label>
+              </button>
             </div>
+
+            <!-- <button class="switch-theme" role="switch" type="button" tabindex="0" aria-checked="false">
+              <svg width="24" height="24" fill="none" class="">
+                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" fill="currentColor" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M12 4v1M18 6l-1 1M20 12h-1M18 18l-1-1M12 19v1M7 17l-1 1M5 12H4M7 7 6 6" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <svg width="24" height="24" fill="none" class="">
+                <path
+                  d="M18 15.63c-.977.52-1.945.481-3.13.481A6.981 6.981 0 0 1 7.89 9.13c0-1.185-.04-2.153.481-3.13C6.166 7.174 5 9.347 5 12.018A6.981 6.981 0 0 0 11.982 19c2.67 0 4.844-1.166 6.018-3.37ZM16 5c0 2.08-.96 4-3 4 2.04 0 3 .92 3 3 0-2.08.96-3 3-3-2.04 0-3-1.92-3-4Z"
+                  fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              <span class="">
+                <svg width="24" height="24" fill="none" class="">
+                  <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" fill="currentColor" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M12 4v1M18 6l-1 1M20 12h-1M18 18l-1-1M12 19v1M7 17l-1 1M5 12H4M7 7 6 6" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <svg width="24" height="24" fill="none" class="">
+                  <path
+                    d="M18 15.63c-.977.52-1.945.481-3.13.481A6.981 6.981 0 0 1 7.89 9.13c0-1.185-.04-2.153.481-3.13C6.166 7.174 5 9.347 5 12.018A6.981 6.981 0 0 0 11.982 19c2.67 0 4.844-1.166 6.018-3.37ZM16 5c0 2.08-.96 4-3 4 2.04 0 3 .92 3 3 0-2.08.96-3 3-3-2.04 0-3-1.92-3-4Z"
+                    fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </button> -->
+
+
             <!-- Burger Button -->
             <button class="menu d-flex d-md-none" id="menu__toggle__btn" aria-label="Main Menu">
               <svg width="100" height="60" viewBox="0 0 100 100">
@@ -132,6 +120,9 @@
           </div>
         </div>
       </div>
+      <div class="progress-indicator">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
     </nav>
     <!-- End Navbar -->
 
@@ -140,13 +131,13 @@
       <div class="container">
         <div class="row align-items-center">
 
-          <div class="col-md-6">
+          <div class="col-lg-7 col-md-6">
             <div class="main-image">
               <img src="./images/mrs-eman.png" alt="mrs/Eman Hassan">
             </div>
           </div>
 
-          <div class=" col-md-6">
+          <div class=" col-lg-5 col-md-6">
             <div class="main-content">
               <h2>م /</h2>
               <div class="position-relative" style="width: fit-content;">
@@ -159,7 +150,7 @@
               </div>
               <p>مــــنصة متخــــصــــصــــة في</p>
               <p>علم الأحياء</p>
-              <div class="buttons" id="menu__btns">
+              <div class="buttons">
                 <a href="#">
                   <span>تسجيل الدخول</span>
                 </a>
