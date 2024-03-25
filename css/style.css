@@ -39,8 +39,8 @@ body[data-theme="dark"] {
 #tsparticles {
 	background-color: #f1f5f9;
 	position: absolute;
-	width: 99.5vw;
-	height: 99vh;
+	width: 100vw;
+	height: 100vh;
 	z-index: -1;
 }
 
@@ -114,6 +114,18 @@ body[data-theme="dark"] nav .progress-indicator .progress-bar {
 .logo {
 	display: block;
 	width: 170px;
+}
+
+.logo.dark {
+	display: none;
+}
+
+body[data-theme="dark"] .logo.light {
+	display: none;
+}
+
+body[data-theme="dark"] .logo.dark {
+	display: block;
 }
 
 /* Start Switch Theme Button */
@@ -363,7 +375,13 @@ main .main-image img {
 	font-weight: 600;
 	width: fit-content;
 	margin-bottom: 20px;
-	position: relative
+	position: relative;
+	transition: var(--trans-dur);
+
+}
+
+body[data-theme="dark"] .main-content h1 {
+	color: white;
 }
 
 .main-content h1::after {
@@ -444,3 +462,27 @@ main .main-image img {
 
 
 /* End Navbar */
+
+/* Start Pattern Separated */
+.separated {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: var(--theme-background);
+	position: relative;
+}
+
+.pattern {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../images/features-Pattern.png);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: repeat-x;
+	opacity: 0.4;
+	transition: var(--trans-dur);
+}
+
+/* End Pattern Separated */
