@@ -486,3 +486,40 @@ body[data-theme="dark"] .main-content h1 {
 }
 
 /* End Pattern Separated */
+
+/* Start Features Section */
+.features {
+	padding: 4rem 0;
+	position: relative;
+	background-color: #155e75;
+}
+
+.features .features_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../images/features-bg.png);
+	background-size: contain;
+	opacity: 0.5;
+}
+
+.features .features_card {
+	padding: 10px;
+	text-align: center;
+}
+
+.features .features_card_icon img {
+	width: 100%;
+}
+
+.features .features_card_title {
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+
+/* End Features Section */
