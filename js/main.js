@@ -8,6 +8,7 @@ const myBarIndicator = document.querySelector("#myBar");
 const themeButton = document.querySelector("#theme__button");
 const mainImage = document.querySelector(".main-image");
 const localTheme = window.localStorage.getItem("mrs-eman-theme") || "light";
+const FeaturesCardsTitle = document.querySelectorAll(".features_card_title");
 // ============ All Variables ============
 
 // ============ All Functions ============
@@ -59,12 +60,16 @@ const moveImage = (e) => {
 	let s = 20 * o;
 	mainImage.style.transform = `translate(${i}px, ${s}px)`;
 };
+
 // ============ All Functions ============
 
 // ============ Handel All Function ============
 menuToggleBtn.addEventListener("click", toggleNavbarMenu);
 themeButton.addEventListener("click", toggleTheme);
-window.addEventListener("scroll", scrollWindow);
+window.addEventListener("scroll", () => {
+	scrollWindow();
+});
 header.addEventListener("mousemove", moveImage);
 checkTheme();
+
 // ============ Handel All Function ============
