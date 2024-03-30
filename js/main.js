@@ -71,5 +71,28 @@ window.addEventListener("scroll", () => {
 });
 header.addEventListener("mousemove", moveImage);
 checkTheme();
+scrollWindow();
 
 // ============ Handel All Function ============
+
+let coursesCard = document.querySelectorAll(".course-card");
+
+coursesCard.forEach((card) => {
+	card.addEventListener("mousemove", function (e) {
+		let limits = 15;
+		let rect = card.getBoundingClientRect();
+		let x = e.clientX - rect.left;
+		let y = e.clientY - rect.top;
+		let offsetX = x / rect.width;
+		let offsetY = y / rect.height;
+
+		let rotateY = offsetX * (limits * 2) - limits;
+		let rotateX = offsetY * (limits * 2) - limits;
+
+		card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
+	});
+
+	card.addEventListener("mouseleave", function (e) {
+		card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+	});
+});
