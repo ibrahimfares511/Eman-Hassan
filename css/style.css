@@ -679,6 +679,12 @@ body[data-theme="dark"] .wave {
 	}
 }
 
+@media screen and (max-width: 767.98px) {
+	.wave-separated {
+		bottom: 75px
+	}
+}
+
 /* End Wave Separated */
 
 /* Start Courses Section */
@@ -780,4 +786,42 @@ body[data-theme="dark"] .course-card-body a > div {
 	}
 }
 
+@media screen and (max-width: 767.98px) {
+	.section-title {
+		font-size: 2.2rem;
+	}
+
+	.section-title::after {
+		font-size: 2.6rem;
+	}
+}
+
 /* End Courses Section */
+
+/* Start Footer */
+footer {
+	background: #334155;
+	padding: 4rem 20px;
+	margin-top: 6rem;
+}
+
+footer .social-media img {
+	transition: var(--trans-dur);
+}
+
+footer .social-media img:hover {
+	transform: scale(1.2);
+}
+
+footer hr {
+	border: 0.2rem solid #1e293b;
+	opacity: 1;
+	border-radius: 0.2rem;
+	margin: 2rem 0;
+}
+
+footer span.heart {
+	font-size: 1.5rem;
+}
+
+/* End Footer */
