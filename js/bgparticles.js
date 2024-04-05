@@ -36,7 +36,7 @@ tsParticles.load("tsparticles", {
 				area: 800,
 			},
 			limit: 0,
-			value: 50,
+			value: 20,
 		},
 		opacity: {
 			animation: {
