@@ -1,6 +1,5 @@
 "use strict";
 // ============ All Variables ============
-const header = document.querySelector("header");
 const menuToggleBtn = document.querySelector("#menu__toggle__btn");
 const menuBtn = document.querySelector("#menu__btns");
 const mainNavbar = document.querySelector("#main__navbar");
@@ -9,7 +8,7 @@ const themeButton = document.querySelector("#theme__button");
 const mainImage = document.querySelector(".main-image");
 const localTheme = window.localStorage.getItem("mrs-eman-theme") || "light";
 const FeaturesCardsTitle = document.querySelectorAll(".features_card_title");
-const coursesCard = document.querySelectorAll(".course-card");
+const coursesCard = document.querySelectorAll(".classroom-card");
 const sectionTitle = document.querySelectorAll(".section-title");
 const featuresCardTitle = document.querySelectorAll(".features_card_title");
 // ============ All Variables ============
@@ -54,53 +53,8 @@ const checkTheme = () => {
   document.body.dataset.theme = localTheme;
 };
 
-// Move Image When Mouse Move
-const moveImage = (e) => {
-  let h = header.clientHeight;
-  let w = header.clientWidth;
-  let i = (10 * e.pageX) / h - 1;
-  let o = (2 * e.pageY) / w - 1;
-  let s = 20 * o;
-  mainImage.style.transform = `translate(${i}px, ${s}px)`;
-};
-
-// ============ All Functions ============
-
-// ============ Handel All Function ============
-menuToggleBtn.addEventListener("click", toggleNavbarMenu);
-themeButton.addEventListener("click", toggleTheme);
-window.addEventListener("scroll", () => {
-  scrollWindow();
-});
-header.addEventListener("mousemove", moveImage);
-checkTheme();
-scrollWindow();
-
-// ============ Handel All Function ============
-
-// Make Animation With Mouse Move In Course Card
-coursesCard.forEach((card) => {
-  card.addEventListener("mousemove", function (e) {
-    let limits = 15;
-    let rect = card.getBoundingClientRect();
-    let x = e.clientX - rect.left;
-    let y = e.clientY - rect.top;
-    let offsetX = x / rect.width;
-    let offsetY = y / rect.height;
-
-    let rotateY = offsetX * (limits * 2) - limits;
-    let rotateX = offsetY * (limits * 2) - limits;
-
-    card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
-  });
-
-  card.addEventListener("mouseleave", function (e) {
-    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  });
-});
-
-// Make Animation Title With Scroll
-window.addEventListener("scroll", function () {
+// Animation Section Title
+const sectionTitleAnimation = () => {
   sectionTitle.forEach((title) => {
     const titleOffsetTop = title.offsetTop;
     const scrollPosition = window.scrollY + window.innerHeight / 2.4;
@@ -114,7 +68,10 @@ window.addEventListener("scroll", function () {
 
     title.style.setProperty("--title-after-right", `${newRight}px`);
   });
+};
 
+// Animation Features Title
+const featuresTitleAnimation = () => {
   featuresCardTitle.forEach((title) => {
     const titleOffsetTop = title.offsetTop;
     const scrollPosition = window.scrollY + window.innerHeight / 10.3;
@@ -140,5 +97,44 @@ window.addEventListener("scroll", function () {
     title.style.setProperty("--title-translate-y", `${newY}px`);
     title.style.setProperty("--title-rotate", `${newRotate}deg`);
     title.style.backgroundColor = color;
+  });
+};
+
+// ============ All Functions ============
+
+// ============ Handel All Function ============
+menuToggleBtn.addEventListener("click", toggleNavbarMenu);
+themeButton.addEventListener("click", toggleTheme);
+window.addEventListener("scroll", () => {
+  scrollWindow();
+  sectionTitleAnimation();
+  featuresTitleAnimation();
+});
+
+checkTheme();
+scrollWindow();
+sectionTitleAnimation();
+featuresTitleAnimation();
+
+// ============ Handel All Function ============
+
+// Make Animation With Mouse Move In Course Card
+coursesCard.forEach((card) => {
+  card.addEventListener("mousemove", function (e) {
+    let limits = 15;
+    let rect = card.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+    let offsetX = x / rect.width;
+    let offsetY = y / rect.height;
+
+    let rotateY = offsetX * (limits * 2) - limits;
+    let rotateX = offsetY * (limits * 2) - limits;
+
+    card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
+  });
+
+  card.addEventListener("mouseleave", function (e) {
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   });
 });

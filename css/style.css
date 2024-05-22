@@ -61,7 +61,7 @@ body[data-theme="dark"] #tsparticles {
 }
 
 /* Start Header */
-header {
+.main-header {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -276,13 +276,13 @@ body[data-theme="dark"] .logo.dark {
 }
 
 /* SignUp & Login Buttons */
-header .buttons,
+.main-header .buttons,
 .navbar .buttons {
   display: flex;
   gap: 10px;
 }
 
-header .buttons a,
+.main-header .buttons a,
 .navbar .buttons a {
   display: inline-flex;
   text-decoration: none;
@@ -301,19 +301,19 @@ header .buttons a,
   transition: var(--trans-dur);
 }
 
-header .buttons a:first-child,
+.main-header .buttons a:first-child,
 .navbar .buttons a:first-child {
   background: var(--secondary-color);
 }
 
-header .buttons a:first-child:hover,
+.main-header .buttons a:first-child:hover,
 .navbar .buttons a:first-child:hover {
   background: transparent;
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
 }
 
-header .buttons a:last-child:hover,
+.main-header .buttons a:last-child:hover,
 .navbar .buttons a:last-child:hover {
   background: transparent;
   border: 2px solid var(--primary-color);
@@ -322,7 +322,7 @@ header .buttons a:last-child:hover,
 
 /* Responsive */
 @media screen and (max-width: 767.98px) {
-  header {
+  .main-header {
     width: auto;
     height: auto;
   }
@@ -643,12 +643,14 @@ body[data-theme="dark"] .wave {
   transform: translateX(var(--title-after-right, -100vw));
 }
 
+.classroom-card,
 .course-card {
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
 }
 
+.classroom-card-header img,
 .course-card-header img {
   width: 100%;
   border-radius: 10px;
@@ -656,6 +658,7 @@ body[data-theme="dark"] .wave {
   transition: transform var(--trans-dur);
 }
 
+.classroom-card-body,
 .course-card-body {
   width: 90%;
   margin: auto;
@@ -664,12 +667,14 @@ body[data-theme="dark"] .wave {
   transform: translateZ(20px);
 }
 
+.classroom-card-body a,
 .course-card-body a {
   color: var(--theme-color);
   text-align: right;
   text-decoration: none;
 }
 
+.classroom-card-body a > div,
 .course-card-body a > div {
   background-color: var(--theme-background);
   border-radius: 10px;
@@ -681,28 +686,32 @@ body[data-theme="dark"] .wave {
   transition: all var(--trans-dur);
 }
 
+body[data-theme="dark"] .classroom-card-body a > div,
 body[data-theme="dark"] .course-card-body a > div,
 body[data-theme="dark"] .books .book_card {
   border: 1px solid #1e293b;
 }
 
+.classroom-card-body h4,
 .course-card-body h4 {
   font-weight: 700;
   font-size: 1.25rem;
 }
 
-.course-card-body hr {
+.classroom-card-body hr,
+.course-card-body header hr {
   border: 1px solid #2dd4bf;
   opacity: 1;
 }
 
+.classroom-card-body p,
 .course-card-body p {
   margin: 0;
   color: #6b7280;
 }
 
 @media (min-width: 991.98px) and (max-width: 1200px) {
-  .course-card-body a > div {
+  .classroom-card-body a > div {
     padding: 1rem;
   }
 }
@@ -728,7 +737,6 @@ body[data-theme="dark"] .books .book_card {
   width: 100%;
   height: 600px;
   margin-top: 3rem;
-  overflow: visible;
 }
 
 .books .book_card {
@@ -741,6 +749,10 @@ body[data-theme="dark"] .books .book_card {
   box-shadow: 0 0 10px #0004;
   overflow: hidden;
   direction: rtl;
+}
+
+body[data-theme="dark"] .books .book_card {
+  box-shadow: 0 0 10px #000000d1;
 }
 
 .books .book_card .card-body {
@@ -794,7 +806,8 @@ body[data-theme="dark"] .books .book_card {
   opacity: 0.3;
   cursor: not-allowed;
 }
-.books .book_card .card-footer .book-price {
+.books .book_card .card-footer .book-price,
+.course-card .course-price {
   flex-basis: 33%;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -807,14 +820,13 @@ body[data-theme="dark"] .books .book_card {
   justify-content: center;
   gap: 5px;
 }
-.books .book_card .card-footer .book-price span:first-child {
+.books .book_card .card-footer .book-price span:first-child,
+.course-card .course-price span:first-child {
   background-color: var(--theme-background);
   color: var(--theme-color);
   padding: 0rem 0.75rem;
   border-radius: 0.5rem;
   font-weight: bold;
-}
-.books .book_card .card-footer .book-price span:last-child {
 }
 .books .swiper .swiper-pagination {
   top: 100%;
@@ -841,8 +853,9 @@ body[data-theme="dark"] .books .book_card {
   background: var(--main-gradient);
 }
 @media screen and (max-width: 767.98px) {
-  .books .swiper {
-    overflow: hidden;
+  .books .swiper-button-next,
+  .books .swiper-button-prev {
+    display: none;
   }
 }
 /* End Books Section */
@@ -930,7 +943,8 @@ body[data-theme="dark"] .page_title {
   gap: 1rem;
   margin-top: 2rem;
 }
-.book_buttons button {
+.book_buttons button,
+.book_buttons a {
   padding: 0.75rem;
   border: none;
   border-radius: 10px;
@@ -942,17 +956,18 @@ body[data-theme="dark"] .page_title {
   justify-content: center;
   gap: 10px;
 }
-.book_buttons button.add_to_cart {
+.book_buttons .add_to_cart {
   background: var(--primary-color);
 }
-.book_buttons button.go_to_cart {
+.book_buttons .go_to_cart {
   background: var(--cyan-dark);
 }
 .book_buttons .book_notAvailable {
   width: 100%;
   text-align: center;
 }
-.book_buttons button:hover {
+.book_buttons button:hover,
+.book_buttons a:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
 }
@@ -974,36 +989,226 @@ body[data-theme="dark"] .page_title {
   =============================
 */
 
+/*
+  =======================
+  === Start Cart Page ===
+  =======================
+*/
+.cart_total_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_total_price span {
+  width: 80px;
+  border-radius: 2rem;
+  padding: 0.25rem 0;
+  font-weight: bold;
+}
+
+.cart_total_price span:first-child {
+  background: var(--primary-color);
+  color: white;
+  text-align: right;
+  padding-right: 1rem;
+  width: 90px;
+}
+
+.cart_total_price span:last-child {
+  background: var(--cyan-light);
+  color: #101010;
+  margin-right: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+.cart_title_section {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.course-card {
+}
+
+.course-card-header {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.course-card img {
+  transition: var(--trans-dur) var(--trans-timing);
+}
+.course-card:hover img {
+  filter: saturate(3);
+  transform: scale(1.2);
+}
+
+.course-card-body {
+  background-color: var(--theme-background);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: -5px 5px 20px #0006;
+  transition: var(--trans-dur) var(--trans-timing);
+  overflow: hidden;
+}
+
+.course-card:hover .course-card-body {
+  transform: scale(1.05);
+}
+
+.course-card-body header,
+.course-card-body footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.course-card-body-title {
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.course-card-body-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 10px;
+  /* flex-basis: 120px; */
+}
+
+.course-card button:not(.trash) {
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+
+.course-card .course-subscribed p {
+  border: 1px solid #14b8a6;
+  background: rgb(6 182 212 / 0.1);
+  padding: 1rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  width: 120px;
+}
+
+.button-outline {
+  background-color: transparent;
+  border-color: #14b8a6 !important;
+  color: var(--theme-color);
+}
+.button-fill,
+.button-outline:hover {
+  background: var(--main-gradient);
+  color: white;
+  border: 2px solid transparent !important;
+}
+
+.course-card .separated-line {
+  width: 85%;
+  margin: 2rem auto 1rem;
+}
+
+.course-card .course-price {
+  border-radius: 1rem !important;
+}
+.course-card .course-date {
+  font-size: 0.813rem;
+}
+
+.course-card .trash,
+.book_card .trash {
+  border: none;
+  text-align: center;
+  background: var(--secondary-color);
+  color: white;
+  font-size: 2rem;
+  width: calc(100% + 2rem);
+  transform: translate(1rem, 1rem);
+  cursor: pointer;
+}
+.book_card .book-price {
+  border-radius: 0 1rem 1rem 0 !important;
+}
+.book_card .trash {
+  width: 100%;
+  margin-top: 1rem;
+  transform: translate(0, 0);
+}
+
+.go_to_invoice {
+  transition: var(--trans-dur) var(--trans-timing);
+}
+.go_to_invoice:hover {
+  transform: scale(1.1);
+}
+
+.go_to_invoice div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--main-gradient);
+  color: white;
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50px);
+}
+.go_to_invoice p {
+  height: 50px;
+  padding: 0 4rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 50px;
+  background: var(--primary-color);
+}
+
+/*
+  =====================
+  === End Cart Page ===
+  =====================
+*/
+
 /* Start Footer */
-footer {
+.main-footer {
   background: #334155;
   padding: 4rem 20px;
   margin-top: 6rem;
 }
 
-footer .social-media img {
+.main-footer .social-media img {
   width: 50px;
   height: 50px;
   transition: var(--trans-dur);
 }
 
-footer .social-media img:hover {
+.main-footer .social-media img:hover {
   transform: scale(1.2);
 }
 
-footer hr {
+.main-footer hr {
   border: 0.2rem solid #1e293b;
   opacity: 1;
   border-radius: 0.2rem;
   margin: 2rem 0;
 }
 
-footer span.heart {
+.main-footer span.heart {
   font-size: 1.5rem;
 }
 
 @media screen and (max-width: 767.98px) {
-  footer .social-media img {
+  .main-footer .social-media img {
     width: 35px;
     height: 35px;
   }
