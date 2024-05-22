@@ -742,7 +742,7 @@ body[data-theme="dark"] .books .book_card {
 .books .book_card {
   display: flex;
   flex-direction: column;
-  height: 550px;
+  min-height: 550px;
   border: 1px solid #cbd5e1;
   background: var(--theme-background);
   border-radius: 1rem;
@@ -1160,7 +1160,8 @@ body[data-theme="dark"] .page_title {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(-50px);
+  margin-left: -50px;
+  position: relative;
 }
 .go_to_invoice p {
   height: 50px;
@@ -1171,6 +1172,12 @@ body[data-theme="dark"] .page_title {
   text-align: center;
   line-height: 50px;
   background: var(--primary-color);
+}
+
+@media screen and (max-width: 767.98px) {
+  .go_to_invoice p {
+    padding: 0 4rem 0 2rem;
+  }
 }
 
 /*
