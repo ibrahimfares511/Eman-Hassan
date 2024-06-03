@@ -11,6 +11,8 @@ const FeaturesCardsTitle = document.querySelectorAll(".features_card_title");
 const coursesCard = document.querySelectorAll(".classroom-card");
 const sectionTitle = document.querySelectorAll(".section-title");
 const featuresCardTitle = document.querySelectorAll(".features_card_title");
+const allInputs = document.querySelectorAll(".custom_input input");
+
 // ============ All Variables ============
 
 // ============ All Functions ============
@@ -136,5 +138,17 @@ coursesCard.forEach((card) => {
 
   card.addEventListener("mouseleave", function (e) {
     card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  });
+});
+
+// Start Animation Input
+allInputs.forEach((input) => {
+  input.addEventListener("focus", function () {
+    input.closest(".custom_input").classList.add("focused");
+  });
+  input.addEventListener("blur", function () {
+    if (input.value == "") {
+      input.closest(".custom_input").classList.remove("focused");
+    }
   });
 });
