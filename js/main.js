@@ -61,7 +61,7 @@ const sectionTitleAnimation = () => {
     const titleOffsetTop = title.offsetTop;
     const scrollPosition = window.scrollY + window.innerHeight / 2.4;
 
-    let newRight = -100 + (scrollPosition - titleOffsetTop);
+    let newRight = -500 + (scrollPosition - titleOffsetTop);
 
     // تأكد من أن العنصر لا يتحرك بعد الوصول إلى موضعه النهائي
     if (newRight > 0) {

@@ -1208,10 +1208,10 @@ body[data-theme="dark"] .page_title {
 .login-form-header-title span:first-child {
   color: var(--theme-color);
 }
-.register .login-form-header-title span:last-child {
+.login .login-form-header-title span:last-child {
   color: var(--secondary-color);
 }
-.login .login-form-header-title span:last-child {
+.register .login-form-header-title span:last-child {
   color: var(--primary-color);
 }
 .login-form-header-image {
@@ -1325,6 +1325,12 @@ body[data-theme="dark"] .page_title {
   left: 0;
   top: -20px;
 }
+.custom_input_message {
+  color: #777;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  word-spacing: 2px;
+}
 form button {
   margin-top: 2rem;
   width: auto;
@@ -1334,10 +1340,10 @@ form button {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.register form button {
+.login form button {
   background: var(--secondary-color);
 }
-.login form button {
+.register form button {
   background: var(--primary-color);
 }
 .check_method {
@@ -1354,6 +1360,74 @@ form button {
   ======================
   === End Login Page ===
   ======================
+*/
+
+/*
+  ===================================
+  === Start Home Page After Login ===
+  ===================================
+*/
+.news_courses {
+  background: var(--cyan-dark);
+  padding-top: 8rem;
+
+  position: relative;
+  z-index: 0;
+}
+.news_courses::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+.news_courses_head .news_courses_title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+.news_courses_head .head_image {
+  width: 15rem;
+  margin: auto;
+}
+.news_courses_circle {
+  -webkit-animation: toSpin 40s linear infinite;
+  animation: toSpin 40s linear infinite;
+  border: 2px dashed #1f2937;
+  border-radius: 100%;
+  height: calc(17rem * 2);
+  width: calc(17rem * 2);
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+@keyframes toSpin {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(1turn);
+    transform: translateX(-50%) rotate(1turn);
+  }
+}
+
+.news_courses_content {
+  background-color: white;
+  padding: 3rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  z-index: 3;
+}
+/*
+  =================================
+  === End Home Page After Login ===
+  =================================
 */
 
 /* Start Footer */
