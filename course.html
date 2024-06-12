@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eman Hassan | Book Page</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Css Files -->
+
+    <!-- Js Files -->
+    <script src="./js/tsparticles.bundle.min.js" defer></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <!-- Js Files -->
+  </head>
+
+  <body>
+    <!-- Start Navbar -->
+    <nav id="main__navbar">
+      <div class="container">
+        <div class="navbar">
+          <div class="brand">
+            <!-- Logo Image -->
+            <a href="index.html">
+              <img src="./images/logo.png" class="logo light" />
+              <img src="./images/logo-strok.png" class="logo dark" />
+            </a>
+            <!-- Choose Theme -->
+            <div class="theme">
+              <button
+                id="theme__button"
+                class="switch__button"
+                data-theme="light"
+              >
+                <svg width="24" height="24" fill="none" class="sun">
+                  <path
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12 4v1M18 6l-1 1M20 12h-1M18 18l-1-1M12 19v1M7 17l-1 1M5 12H4M7 7 6 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <svg width="24" height="24" fill="none" class="moon">
+                  <path
+                    d="M18 15.63c-.977.52-1.945.481-3.13.481A6.981 6.981 0 0 1 7.89 9.13c0-1.185-.04-2.153.481-3.13C6.166 7.174 5 9.347 5 12.018A6.981 6.981 0 0 0 11.982 19c2.67 0 4.844-1.166 6.018-3.37ZM16 5c0 2.08-.96 4-3 4 2.04 0 3 .92 3 3 0-2.08.96-3 3-3-2.04 0-3-1.92-3-4Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Burger Button -->
+            <button
+              class="menu d-flex d-md-none"
+              id="menu__toggle__btn"
+              aria-label="Main Menu"
+            >
+              <svg width="100" height="60" viewBox="0 0 100 100">
+                <path
+                  class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path
+                  class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="buttons" id="menu__btns">
+            <a href="login.html">
+              <span>تسجيل الدخول</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--ri"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m-1-7.208a2.5 2.5 0 1 1 2 0V16h-2z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <a href="register.html">
+              <span> انشئ حسابك الآن</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--ph"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 256 256"
+                >
+                  <g fill="currentColor">
+                    <path
+                      d="M224 128a95.76 95.76 0 0 1-31.8 71.37A72 72 0 0 0 128 160a40 40 0 1 0-40-40a40 40 0 0 0 40 40a72 72 0 0 0-64.2 39.37A96 96 0 1 1 224 128"
+                      opacity=".2"
+                    ></path>
+                    <path
+                      d="M168 56a8 8 0 0 1 8-8h16V32a8 8 0 0 1 16 0v16h16a8 8 0 0 1 0 16h-16v16a8 8 0 0 1-16 0V64h-16a8 8 0 0 1-8-8m62.56 54.68a103.92 103.92 0 1 1-85.24-85.24a8 8 0 0 1-2.64 15.78A88.07 88.07 0 0 0 40 128a87.62 87.62 0 0 0 22.24 58.41a79.66 79.66 0 0 1 36.06-28.75a48 48 0 1 1 59.4 0a79.66 79.66 0 0 1 36.06 28.75A87.62 87.62 0 0 0 216 128a88.85 88.85 0 0 0-1.22-14.68a8 8 0 1 1 15.78-2.64M128 152a32 32 0 1 0-32-32a32 32 0 0 0 32 32m0 64a87.57 87.57 0 0 0 53.92-18.5a64 64 0 0 0-107.84 0A87.57 87.57 0 0 0 128 216"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="progress-indicator">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="main_content" dir="rtl">
+      <div
+        class="rounded-md py-24 px-8 text-slate-100 relative overflow-hidden pb-56 bg-cyan-600"
+      >
+        <div class="relative z-10 space-y-6">
+          <div class="flex flex-wrap">
+            <div
+              class="rounded-full font-small shadow-md flex overflow-hidden space-x-2 space-x-reverse shrink-0 bg-cyan-400 text-slate-900 ml-4 my-2"
+            >
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse px-4 py-px flex-center-both rounded-full bg-blue-900 space-x-2"
+              >
+                <span
+                  class="flex-center-both clr-white transform -translate-y-0.5 font-h3"
+                  >+</span
+                ><span class="font-h3 font-w-bold clr-white">0</span
+                ><span class="flex-center-both trasnform text-yellow-300"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify iconify--bxs"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M4 8H2v12a2 2 0 0 0 2 2h12v-2H4z"
+                    ></path>
+                    <path
+                      fill="currentColor"
+                      d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m-9 12V6l7 4z"
+                    ></path></svg
+                ></span>
+              </div>
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse pl-4 py-px flex-center-both space-x-2"
+              >
+                <span>فيديوهات</span>
+              </div>
+            </div>
+            <div
+              class="rounded-full font-small shadow-md flex overflow-hidden space-x-2 space-x-reverse shrink-0 bg-rose-500 text-slate-100 ml-4 my-2"
+            >
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse px-4 py-px flex-center-both rounded-full bg-blue-900 space-x-2"
+              >
+                <span
+                  class="flex-center-both clr-white transform -translate-y-0.5 font-h3"
+                  >+</span
+                ><span class="font-h3 font-w-bold clr-white">3</span
+                ><span class="flex-center-both trasnform text-yellow-400"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify iconify--healthicons"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M28.753 6.342A1 1 0 0 0 27 7v7a2 2 0 0 0 2 2h6a1 1 0 0 0 .753-1.658zM20.75 23h-1.5l.75-1.8zm6.808-18L37 15.387V40a3 3 0 0 1-3 3H14a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3zm-5.712 10.23a2 2 0 0 0-3.692 0l-5 12a2 2 0 0 0 3.692 1.54l.737-1.77h4.834l.737 1.77a2 2 0 0 0 3.692-1.54l-.103-.246Q26.87 27 27 27h1v1a2 2 0 1 0 4 0v-1h1a2 2 0 1 0 0-4h-1v-1a2 2 0 1 0-4 0v1h-1c-.648 0-1.224.308-1.59.786zM15 31a2 2 0 1 0 0 4a2 2 0 1 0 0 4h12a2 2 0 0 0 .002-4H33a2 2 0 1 0 0-4z"
+                    ></path></svg
+                ></span>
+              </div>
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse pl-4 py-px flex-center-both space-x-2"
+              >
+                <span>امتحانات</span>
+              </div>
+            </div>
+            <div
+              class="rounded-full font-small shadow-md flex overflow-hidden space-x-2 space-x-reverse shrink-0 bg-blue-500 text-slate-100 ml-4 my-2"
+            >
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse px-4 py-px flex-center-both rounded-full bg-blue-900 space-x-2"
+              >
+                <span
+                  class="flex-center-both clr-white transform -translate-y-0.5 font-h3"
+                  >+</span
+                ><span class="font-h3 font-w-bold clr-white">0</span
+                ><span class="flex-center-both trasnform text-yellow-400"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify iconify--healthicons"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M39 13a3 3 0 0 0-3 3v2h6v-2a3 3 0 0 0-3-3m3 7h-6v16.5l3 4.5l3-4.5zM6 9v30a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3m14 6a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1m1 3a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm-1 10a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1m1 3a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm-9-3v3h3v-3zm-1-2h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1m6.707-10.293a1 1 0 0 0-1.414-1.414L13 17.586l-1.293-1.293a1 1 0 0 0-1.414 1.414L13 20.414z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                ></span>
+              </div>
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse pl-4 py-px flex-center-both space-x-2"
+              >
+                <span>واجبات</span>
+              </div>
+            </div>
+            <div
+              class="rounded-full font-small shadow-md flex overflow-hidden space-x-2 space-x-reverse shrink-0 bg-cyan-400 text-slate-900 ml-4 my-2"
+            >
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse px-4 py-px flex-center-both rounded-full bg-blue-900 space-x-2"
+              >
+                <span
+                  class="flex-center-both clr-white transform -translate-y-0.5 font-h3"
+                  >+</span
+                ><span class="font-h3 font-w-bold clr-white">0</span
+                ><span class="flex-center-both trasnform text-yellow-300"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify iconify--ant-design"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32m-260 72h96v209.9L621.5 312L572 347.4zM232 888V136h280v296.9c0 3.3 1 6.6 3 9.3a15.9 15.9 0 0 0 22.3 3.7l83.8-59.9l81.4 59.4c2.7 2 6 3.1 9.4 3.1c8.8 0 16-7.2 16-16V136h64v752z"
+                    ></path>
+                    <path
+                      fill="currentColor"
+                      fill-opacity=".15"
+                      d="M668 345.9V136h-96v211.4l49.5-35.4z"
+                    ></path>
+                    <path
+                      fill="currentColor"
+                      fill-opacity=".15"
+                      d="M727.9 136v296.5c0 8.8-7.2 16-16 16c-3.4 0-6.7-1.1-9.4-3.1L621.1 386l-83.8 59.9a15.9 15.9 0 0 1-22.3-3.7c-2-2.7-3-6-3-9.3V136H232v752h559.9V136z"
+                    ></path></svg
+                ></span>
+              </div>
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse pl-4 py-px flex-center-both space-x-2"
+              >
+                <span>ملفات</span>
+              </div>
+            </div>
+            <div
+              class="rounded-full font-small shadow-md flex overflow-hidden space-x-2 space-x-reverse shrink-0 bg-rose-500 text-slate-100 ml-4 my-2"
+            >
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse px-4 py-px flex-center-both rounded-full bg-blue-900 space-x-2"
+              >
+                <span
+                  class="flex-center-both clr-white transform -translate-y-0.5 font-h3"
+                  >+</span
+                ><span class="font-h3 font-w-bold clr-white">0</span
+                ><span class="flex-center-both trasnform text-yellow-400"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify iconify--ic"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M4 18h12V6H4zm3.38-5.17L9 15l2.62-3.5L15 16H5z"
+                      opacity=".3"
+                    ></path>
+                    <path
+                      fill="currentColor"
+                      d="M11.62 11.5L9 15l-1.62-2.17L5 16h10z"
+                    ></path>
+                    <path
+                      fill="currentColor"
+                      d="M18 10.48V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4.48l4 3.98v-11zM16 18H4V6h12z"
+                    ></path></svg
+                ></span>
+              </div>
+              <div
+                class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse pl-4 py-px flex-center-both space-x-2"
+              >
+                <span>كويزات الفيديو</span>
+              </div>
+            </div>
+          </div>
+          <div class="font-h1 font-w-bold">كورس الامتحان</div>
+          <div class="">
+            <span>3ث<br /></span>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row font-smaller text-slate-100 sm:space-y-0 space-y-4 sm:space-x-8 sm:space-x-reverse"
+          >
+            <div
+              class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse space-x-2"
+            >
+              <span class="flex-center-both trasnform text-blue-400"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--ic"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                    opacity=".3"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                  ></path></svg></span
+              ><span class="font-w-bold underline"
+                ><span>تاريخ انشاء الكورس</span> </span
+              ><span
+                class="bg-blue-400 px-3 rounded-full opacity-90 text-slate-800"
+                >السبت، ١ يونيو ٢٠٢٤</span
+              >
+            </div>
+            <div
+              class="flex flex-wrap flex-row lg:space-x-reverse md:space-x-reverse sm:space-x-reverse space-x-reverse space-x-2"
+            >
+              <span class="flex-center-both trasnform text-rose-400"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--icon-park-twotone"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 48 48"
+                >
+                  <defs>
+                    <mask id="iconifyReact79">
+                      <g
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      >
+                        <path
+                          fill="#555"
+                          d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                        ></path>
+                        <path
+                          d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                        ></path>
+                      </g>
+                    </mask>
+                  </defs>
+                  <path
+                    fill="currentColor"
+                    d="M0 0h48v48H0z"
+                    mask="url(#iconifyReact79)"
+                  ></path></svg></span
+              ><span class="font-w-bold underline">آخر تحديث للكورس</span
+              ><span
+                class="bg-rose-400 px-3 rounded-full opacity-90 text-slate-800"
+                >الثلاثاء، ١١ يونيو ٢٠٢٤</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-0 w-full h-full">
+          <div
+            class="w-auto h-full md:w-full opacity-20 relative mr-auto transform"
+            style="
+              background-image: url('/static/media/bg.42d2fc194af1ddbc4238.png');
+              background-size: cover;
+              background-position: center top;
+            "
+          ></div>
+          <div
+            class="absolute inset-0 w-full h-full bg-gradient text-cyan-600"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 mx-auto">
+            <div
+              class="social-media d-flex align-items-center justify-content-center gap-3"
+            >
+              <a href="#">
+                <img src="images/social-media/facebook.png" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="images/social-media/youtube.png" alt="youtube" />
+              </a>
+              <a href="#">
+                <img src="images/social-media/whatsapp.png" alt="whatsapp" />
+              </a>
+              <a href="#">
+                <img src="images/social-media/tiktok.png" alt="tiktok" />
+              </a>
+              <a href="#">
+                <img src="images/social-media/twitter.png" alt="twitter" />
+              </a>
+              <a href="#">
+                <img src="images/social-media/instagram.png" alt="instagram" />
+              </a>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex align-items-center justify-content-between gap-2"
+            >
+              <span class="heart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--emojione-v1"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 64 64"
+                >
+                  <path
+                    fill="#d13852"
+                    d="M54.02 26.962c-.169-2.643-.734-4.79-2.576-7c-3.686-4.421-12.158-5.157-15.953-.901c-.66.626-1.284 1.38-1.911 2.281l-1.419 2.039l-1.419-2.039c-.629-.9-1.255-1.655-1.916-2.281c-3.792-4.256-12.265-3.521-15.951.901c-1.843 2.211-2.41 4.358-2.579 7c-.24 7.858 5.463 14.15 6.167 15.07c3.87 4.54 8.092 8.834 12.38 12.789c.776.68 1.446 1.243 2.116 1.804c.403.33.8.662 1.201.989c.399-.327.797-.659 1.196-.989c.673-.561 1.343-1.124 2.117-1.804c4.289-3.955 8.511-8.249 12.381-12.789c.706-.923 6.409-7.215 6.166-15.07"
+                  ></path>
+                  <path
+                    fill="#f1a5b1"
+                    d="M51.648 25.56a6.893 6.893 0 0 0-.313-1.997a6.222 6.222 0 0 0-.802-1.662c-2.042-3-6.489-4.081-10.206-3.321c-1.448.349-2.9.894-3.568 2.278c-.228.594.252.879.989.843c2.673-.299 5.632-.03 7.996 1.119c.589.288 1.139.63 1.643 1.032c1.696 1.313 2.429 3.356 2.764 5.381c.822-.166 1.273-1.155 1.378-2.036a7.185 7.185 0 0 0 .119-1.637"
+                  ></path>
+                  <g fill="#faae40">
+                    <path
+                      d="M54.4 18.02a9.222 9.222 0 0 1 1.83 6.566c1.754-2.41 1.868-5.726.008-8.182c-1.981-2.625-5.528-3.396-8.453-2.02a9.198 9.198 0 0 1 6.615 3.637"
+                    ></path>
+                    <path
+                      d="M58.18 14.675a15.665 15.665 0 0 1 3.095 11.12c2.977-4.083 3.162-9.699.016-13.859c-3.369-4.454-9.37-5.753-14.321-3.423a15.625 15.625 0 0 1 11.21 6.162M9.915 18.02a9.257 9.257 0 0 0-1.832 6.566c-1.751-2.41-1.866-5.726-.006-8.182c1.984-2.625 5.527-3.396 8.454-2.02a9.204 9.204 0 0 0-6.616 3.637"
+                    ></path>
+                    <path
+                      d="M6.137 14.675a15.626 15.626 0 0 0-3.094 11.12c-2.976-4.083-3.169-9.699-.019-13.859c3.371-4.454 9.374-5.753 14.325-3.423c-4.256.352-8.389 2.426-11.212 6.162"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+
+              <span class="text-light text-center"
+                >تم صنع هذه المنصة بهدف تهيئة الطالب لـ كامل جوانب الثانوية
+                العامة و ما بعدها</span
+              >
+
+              <span class="heart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--emojione-v1"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 64 64"
+                >
+                  <path
+                    fill="#d13852"
+                    d="M54.02 26.962c-.169-2.643-.734-4.79-2.576-7c-3.686-4.421-12.158-5.157-15.953-.901c-.66.626-1.284 1.38-1.911 2.281l-1.419 2.039l-1.419-2.039c-.629-.9-1.255-1.655-1.916-2.281c-3.792-4.256-12.265-3.521-15.951.901c-1.843 2.211-2.41 4.358-2.579 7c-.24 7.858 5.463 14.15 6.167 15.07c3.87 4.54 8.092 8.834 12.38 12.789c.776.68 1.446 1.243 2.116 1.804c.403.33.8.662 1.201.989c.399-.327.797-.659 1.196-.989c.673-.561 1.343-1.124 2.117-1.804c4.289-3.955 8.511-8.249 12.381-12.789c.706-.923 6.409-7.215 6.166-15.07"
+                  ></path>
+                  <path
+                    fill="#f1a5b1"
+                    d="M51.648 25.56a6.893 6.893 0 0 0-.313-1.997a6.222 6.222 0 0 0-.802-1.662c-2.042-3-6.489-4.081-10.206-3.321c-1.448.349-2.9.894-3.568 2.278c-.228.594.252.879.989.843c2.673-.299 5.632-.03 7.996 1.119c.589.288 1.139.63 1.643 1.032c1.696 1.313 2.429 3.356 2.764 5.381c.822-.166 1.273-1.155 1.378-2.036a7.185 7.185 0 0 0 .119-1.637"
+                  ></path>
+                  <g fill="#faae40">
+                    <path
+                      d="M54.4 18.02a9.222 9.222 0 0 1 1.83 6.566c1.754-2.41 1.868-5.726.008-8.182c-1.981-2.625-5.528-3.396-8.453-2.02a9.198 9.198 0 0 1 6.615 3.637"
+                    ></path>
+                    <path
+                      d="M58.18 14.675a15.665 15.665 0 0 1 3.095 11.12c2.977-4.083 3.162-9.699.016-13.859c-3.369-4.454-9.37-5.753-14.321-3.423a15.625 15.625 0 0 1 11.21 6.162M9.915 18.02a9.257 9.257 0 0 0-1.832 6.566c-1.751-2.41-1.866-5.726-.006-8.182c1.984-2.625 5.527-3.396 8.454-2.02a9.204 9.204 0 0 0-6.616 3.637"
+                    ></path>
+                    <path
+                      d="M6.137 14.675a15.626 15.626 0 0 0-3.094 11.12c-2.976-4.083-3.169-9.699-.019-13.859c3.371-4.454 9.374-5.753 14.325-3.423c-4.256.352-8.389 2.426-11.212 6.162"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </div>
+
+            <div class="text-center mt-4 fs-5" style="color: #d8b4fe">
+              <span class="text-purple-600">&lt;</span>
+              <span class="text-purple-300"
+                >All Copy Rights Reserved @
+                <span>
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                </span>
+              </span>
+              <span class="text-purple-600">&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

@@ -20,6 +20,7 @@
 body {
   --theme-background: #fff;
   --theme-color: #111827;
+  --theme-secondary-background: #d1d5db;
   background-color: var(--theme-background);
   color: var(--theme-color);
   transition: background-color var(--trans-dur), color var(--trans-dur);
@@ -30,6 +31,7 @@ body {
 body[data-theme="dark"] {
   --theme-background: #182030;
   --theme-color: #fff;
+  --theme-secondary-background: #1f2937;
 
   background-color: var(--theme-background);
   color: var(--theme-color);
@@ -647,6 +649,37 @@ body[data-theme="dark"] .wave {
   color: transparent;
   opacity: 0.1;
   transform: translateX(var(--title-after-right, -100vw));
+}
+
+.custom-section-title {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.custom-section-title > span:first-of-type {
+  color: var(--theme-color);
+}
+.custom-section-title > span:last-of-type {
+  color: var(--secondary-color);
+}
+
+.custom-section-title .lines span {
+  position: absolute;
+  background: var(--theme-secondary-background);
+  height: 0.25rem;
+  border-radius: 0.375rem;
+  width: 4rem;
+}
+
+.custom-section-title .lines span:first-child {
+  top: -20px;
+}
+.custom-section-title .lines span:nth-child(2) {
+  bottom: -15px;
+  width: 8rem;
+}
+.custom-section-title .lines span:last-child {
+  bottom: -25px;
 }
 
 .classroom-card,
@@ -1370,7 +1403,7 @@ form button {
 .news_courses {
   background: var(--cyan-dark);
   padding-top: 8rem;
-
+  padding-bottom: 4rem;
   position: relative;
   z-index: 0;
 }
@@ -1418,9 +1451,9 @@ form button {
 }
 
 .news_courses_content {
-  background-color: white;
+  background-color: var(--theme-background);
   padding: 3rem 1rem;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem;
   position: relative;
   z-index: 3;
 }

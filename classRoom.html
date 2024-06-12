@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eman Hassan | Book Page</title>
+    <title>Eman Hassan | Home</title>
     <link rel="icon" type="image/x-icon" href="./images/logo.png" />
 
     <!-- Css Files -->
@@ -13,7 +13,6 @@
     <!-- Css Files -->
 
     <!-- Js Files -->
-    <script src="./js/tsparticles.bundle.min.js" defer></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js" defer></script>
@@ -21,6 +20,9 @@
   </head>
 
   <body>
+    <!-- Start Main Background Animation -->
+    <div id="tsparticles"></div>
+    <!-- Start Main Background Animation -->
     <!-- Start Navbar -->
     <nav id="main__navbar">
       <div class="container">
@@ -145,891 +147,1502 @@
     </nav>
     <!-- End Navbar -->
 
-    <div class="main_content" dir="rtl">
-      <!-- Start Page Title -->
-      <section class="page_title text-center">
+    <!-- Start Header -->
+    <header class="main-header">
+      <!-- Start Main Section -->
+      <main>
         <div class="container">
-          <h2 class="fs-1 fw-bold">عربة التسوق</h2>
-          <div class="sub_title">
-            <p class="fs-3 my-5">إجمالى سعر المنتجات</p>
-            <div class="cart_total_price">
-              <span> 1000 </span>
-              <span> جنيهًا </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Page Title -->
-
-      <!--  Start Courses Section-->
-      <section class="books_cart_section my-5">
-        <div class="container">
-          <h2 class="section-title mb-5" data-title="الكورسات">الكورسات</h2>
-          <div class="row">
-            <div class="col-xl-4 col-lg-6 mt-5">
-              <div class="course-card">
-                <div class="course-card-header">
-                  <img src="images/course-1.jpg" alt="course-1" />
-                </div>
-                <div class="course-card-body">
-                  <header>
-                    <div class="course-card-body-title">
-                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
-                      <hr />
-                      <p>1ث</p>
-                    </div>
-                    <div class="course-card-body-buttons">
-                      <a href="course.html"
-                        ><button class="button-outline">
-                          الدخول للكورس
-                        </button></a
-                      >
-                      <button class="button-fill">إشترك الأن!</button>
-                    </div>
-                  </header>
-                  <hr class="separated-line" />
-                  <footer>
-                    <div class="course-price">
-                      <span>111.00</span>
-                      <span>جنيهًا</span>
-                    </div>
-                    <div class="course-date">
-                      <div class="d-flex justify-content-between gap-1">
-                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            class="iconify iconify--icon-park-twotone"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 48 48"
-                          >
-                            <defs>
-                              <mask id="iconifyReact10">
-                                <g
-                                  fill="none"
-                                  stroke="#fff"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="4"
-                                >
-                                  <path
-                                    fill="#555"
-                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
-                                  ></path>
-                                  <path
-                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
-                                  ></path>
-                                </g>
-                              </mask>
-                            </defs>
-                            <path
-                              fill="currentColor"
-                              d="M0 0h48v48H0z"
-                              mask="url(#iconifyReact10)"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-
-                      <div class="d-flex justify-content-between gap-1">
-                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            class="iconify iconify--ic"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
-                              opacity=".3"
-                            ></path>
-                            <path
-                              fill="currentColor"
-                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </footer>
-                  <button class="trash">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="1em"
-                      height="1em"
-                      style="
-                        vertical-align: -0.125em;
-                        -ms-transform: rotate(360deg);
-                        -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-                      "
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 20 20"
-                      class="iconify"
-                      data-icon="fluent:delete-lines-20-filled"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6">
+              <div class="main-image">
+                <img src="./images/mrs-eman.png" alt="mrs/Eman Hassan" />
               </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 mt-5">
-              <div class="course-card">
-                <div class="course-card-header">
-                  <img src="images/course-1.jpg" alt="course-1" />
+            <div class="col-lg-5 col-md-6">
+              <div class="main-content">
+                <h2>م /</h2>
+                <div class="position-relative" style="width: fit-content">
+                  <h1>إيمان حسن</h1>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 152.9 43.4"
+                    style="enable-background: new 0 0 152.9 43.4"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"
+                    />
+                  </svg>
                 </div>
-                <div class="course-card-body">
-                  <header>
-                    <div class="course-card-body-title">
-                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
-                      <hr />
-                      <p>1ث</p>
-                    </div>
-                    <div class="course-subscribed text-center">
-                      <p>انت مشترك في هذا الكورس</p>
-                    </div>
-                  </header>
-                  <hr class="separated-line" />
-                  <footer>
-                    <div>
-                      <a href="course.html"
-                        ><button class="button-fill">الدخول للكورس</button></a
-                      >
-                    </div>
-                    <div class="course-date">
-                      <div class="d-flex justify-content-between gap-1">
-                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            class="iconify iconify--icon-park-twotone"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 48 48"
-                          >
-                            <defs>
-                              <mask id="iconifyReact10">
-                                <g
-                                  fill="none"
-                                  stroke="#fff"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="4"
-                                >
-                                  <path
-                                    fill="#555"
-                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
-                                  ></path>
-                                  <path
-                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
-                                  ></path>
-                                </g>
-                              </mask>
-                            </defs>
-                            <path
-                              fill="currentColor"
-                              d="M0 0h48v48H0z"
-                              mask="url(#iconifyReact10)"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-
-                      <div class="d-flex justify-content-between gap-1">
-                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            class="iconify iconify--ic"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
-                              opacity=".3"
-                            ></path>
-                            <path
-                              fill="currentColor"
-                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </footer>
-                  <button class="trash">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="1em"
-                      height="1em"
-                      style="
-                        vertical-align: -0.125em;
-                        -ms-transform: rotate(360deg);
-                        -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-                      "
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 20 20"
-                      class="iconify"
-                      data-icon="fluent:delete-lines-20-filled"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-6 mt-5">
-              <div class="course-card">
-                <div class="course-card-header">
-                  <img src="images/course-1.jpg" alt="course-1" />
-                </div>
-                <div class="course-card-body">
-                  <header>
-                    <div class="course-card-body-title">
-                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
-                      <hr />
-                      <p>1ث</p>
-                    </div>
-                    <div class="course-card-body-buttons">
-                      <a href="course.html"
-                        ><button class="button-outline">
-                          الدخول للكورس
-                        </button></a
-                      >
-                      <button class="button-fill">إشترك الأن!</button>
-                    </div>
-                  </header>
-                  <hr class="separated-line" />
-                  <footer>
-                    <div class="course-price">
-                      <span>111.00</span>
-                      <span>جنيهًا</span>
-                    </div>
-                    <div class="course-date">
-                      <div class="d-flex justify-content-between gap-1">
-                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            class="iconify iconify--icon-park-twotone"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 48 48"
-                          >
-                            <defs>
-                              <mask id="iconifyReact10">
-                                <g
-                                  fill="none"
-                                  stroke="#fff"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="4"
-                                >
-                                  <path
-                                    fill="#555"
-                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
-                                  ></path>
-                                  <path
-                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
-                                  ></path>
-                                </g>
-                              </mask>
-                            </defs>
-                            <path
-                              fill="currentColor"
-                              d="M0 0h48v48H0z"
-                              mask="url(#iconifyReact10)"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-
-                      <div class="d-flex justify-content-between gap-1">
-                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            class="iconify iconify--ic"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
-                              opacity=".3"
-                            ></path>
-                            <path
-                              fill="currentColor"
-                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </footer>
-                  <button class="trash">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="1em"
-                      height="1em"
-                      style="
-                        vertical-align: -0.125em;
-                        -ms-transform: rotate(360deg);
-                        -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-                      "
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 20 20"
-                      class="iconify"
-                      data-icon="fluent:delete-lines-20-filled"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                      ></path>
-                    </svg>
-                  </button>
+                <p>مــــنصة متخــــصــــصــــة في</p>
+                <p>مادة الأحياء للمرحلة الثانوية</p>
+                <div class="buttons">
+                  <a href="login.html">
+                    <span>تسجيل الدخول</span>
+                  </a>
+                  <a href="register.html">
+                    <span>انشئ حسابك الآن</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!--  End Courses Section-->
+      </main>
+      <!-- End Main Section -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Patterns Separated -->
+    <section class="separated">
+      <div class="pattern"></div>
+    </section>
+    <!-- End Patterns Separated -->
+
+    <!-- Start Features Section -->
+    <section class="features">
+      <div class="features_bg"></div>
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="features_card">
+              <div class="features_card_icon">
+                <img src="./images/features/time.svg" alt="features-01" />
+              </div>
+              <div
+                class="features_card_title title-1"
+                data-background="#d3332c"
+              >
+                <h6 class="m-0">وفر وقت المواصلات والسنتر</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="features_card">
+              <div class="features_card_icon">
+                <img src="./images/features/repeat.svg" alt="features-01" />
+              </div>
+              <div
+                class="features_card_title title-2"
+                data-background="#3f61e9"
+              >
+                <h6 class="m-0">شاهد دروسك أكثر من مرة</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="features_card">
+              <div class="features_card_icon">
+                <img src="./images/features/book.svg" alt="features-01" />
+              </div>
+              <div
+                class="features_card_title title-3"
+                data-background="#f7a723"
+              >
+                <h6 class="m-0">امتحانات دورية ومستمرة</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="features_card">
+              <div class="features_card_icon">
+                <img src="./images/features/event.png" alt="features-01" />
+              </div>
+              <div
+                class="features_card_title title-4"
+                data-background="#379d7e"
+              >
+                <h6 class="m-0">متابعة دورية ومستمرة</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- Start Wave Separated-->
+    <div class="wave-separated">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <!-- End Wave Separated-->
+
+    <!-- Start Courses Section-->
+    <section class="news_courses mt-5" dir="rtl">
+      <div class="news_courses_head flex-center-x">
+        <div class="news_courses_title text-center pt-5">
+          <span>الصف الأول الثانوي</span>
+          <div class="flex row flex-center-x">
+            <div class="head_image">
+              <img src="./images/bag.svg" alt="bag" />
+            </div>
+          </div>
+        </div>
+        <div class="news_courses_circle"></div>
+      </div>
 
       <div class="container">
-        <hr class="mx-auto" />
-      </div>
-
-      <!--  Start Books Section-->
-      <section class="books_cart_section my-5 books">
-        <div class="container">
-          <h2 class="section-title my-5" data-title="الكتب">الكتب</h2>
+        <div class="news_courses_content">
+          <h2 class="custom-section-title">
+            <span>أحدث</span>
+            <span>الكورسات</span>
+            <div class="lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </h2>
           <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-5">
-              <div class="book_card">
-                <img
-                  src="images/books/book-1.jpg"
-                  class="card-img-top"
-                  alt="book-1"
-                />
-                <div class="card-body">
-                  <a href="book.html">
-                    <h5 class="card-title">
-                      كتاب الفصل الأول - أحياء - إيمان حسن
-                    </h5>
-                  </a>
-                  <hr />
-                  <p class="card-text">
-                    <span>يحتوي الكتاب على : </span>
-                    <span>شرح وتدريبات على الفصل الأول</span>
-                  </p>
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
                 </div>
-                <div class="card-footer">
-                  <div class="book-counter">
-                    <button class="counter-operator operator-plus">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-plus-fill"
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                    <h4 class="mb-0 counter-number">0</h4>
-                    <button class="counter-operator operator-minus" disabled>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-minus-fill"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="book-price">
-                    <span>111.00</span>
-                    <span>جنيهًا</span>
-                  </div>
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
-                <button class="trash">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1em"
-                    height="1em"
-                    style="
-                      vertical-align: -0.125em;
-                      -ms-transform: rotate(360deg);
-                      -webkit-transform: rotate(360deg);
-                      transform: rotate(360deg);
-                    "
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 20 20"
-                    class="iconify"
-                    data-icon="fluent:delete-lines-20-filled"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                    ></path>
-                  </svg>
-                </button>
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-5">
-              <div class="book_card">
-                <img
-                  src="images/books/book-1.jpg"
-                  class="card-img-top"
-                  alt="book-1"
-                />
-                <div class="card-body">
-                  <a href="book.html">
-                    <h5 class="card-title">
-                      كتاب الفصل الأول - أحياء - إيمان حسن
-                    </h5>
-                  </a>
-                  <hr />
-                  <p class="card-text">
-                    <span>يحتوي الكتاب على : </span>
-                    <span>شرح وتدريبات على الفصل الأول</span>
-                  </p>
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
                 </div>
-                <div class="card-footer">
-                  <div class="book-counter">
-                    <button class="counter-operator operator-plus">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-plus-fill"
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                    <h4 class="mb-0 counter-number">0</h4>
-                    <button class="counter-operator operator-minus" disabled>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-minus-fill"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="book-price">
-                    <span>111.00</span>
-                    <span>جنيهًا</span>
-                  </div>
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
-                <button class="trash">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1em"
-                    height="1em"
-                    style="
-                      vertical-align: -0.125em;
-                      -ms-transform: rotate(360deg);
-                      -webkit-transform: rotate(360deg);
-                      transform: rotate(360deg);
-                    "
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 20 20"
-                    class="iconify"
-                    data-icon="fluent:delete-lines-20-filled"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                    ></path>
-                  </svg>
-                </button>
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-5">
-              <div class="book_card">
-                <img
-                  src="images/books/book-1.jpg"
-                  class="card-img-top"
-                  alt="book-1"
-                />
-                <div class="card-body">
-                  <a href="book.html">
-                    <h5 class="card-title">
-                      كتاب الفصل الأول - أحياء - إيمان حسن
-                    </h5>
-                  </a>
-                  <hr />
-                  <p class="card-text">
-                    <span>يحتوي الكتاب على : </span>
-                    <span>شرح وتدريبات على الفصل الأول</span>
-                  </p>
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
                 </div>
-                <div class="card-footer">
-                  <div class="book-counter">
-                    <button class="counter-operator operator-plus">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-plus-fill"
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                    <h4 class="mb-0 counter-number">0</h4>
-                    <button class="counter-operator operator-minus" disabled>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-minus-fill"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="book-price">
-                    <span>111.00</span>
-                    <span>جنيهًا</span>
-                  </div>
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
-                <button class="trash">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1em"
-                    height="1em"
-                    style="
-                      vertical-align: -0.125em;
-                      -ms-transform: rotate(360deg);
-                      -webkit-transform: rotate(360deg);
-                      transform: rotate(360deg);
-                    "
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 20 20"
-                    class="iconify"
-                    data-icon="fluent:delete-lines-20-filled"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                    ></path>
-                  </svg>
-                </button>
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-5">
-              <div class="book_card">
-                <img
-                  src="images/books/book-1.jpg"
-                  class="card-img-top"
-                  alt="book-1"
-                />
-                <div class="card-body">
-                  <a href="book.html">
-                    <h5 class="card-title">
-                      كتاب الفصل الأول - أحياء - إيمان حسن
-                    </h5>
-                  </a>
-                  <hr />
-                  <p class="card-text">
-                    <span>يحتوي الكتاب على : </span>
-                    <span>شرح وتدريبات على الفصل الأول</span>
-                  </p>
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
                 </div>
-                <div class="card-footer">
-                  <div class="book-counter">
-                    <button class="counter-operator operator-plus">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-plus-fill"
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                    <h4 class="mb-0 counter-number">0</h4>
-                    <button class="counter-operator operator-minus" disabled>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1em"
-                        height="1em"
-                        style="
-                          vertical-align: -0.125em;
-                          -ms-transform: rotate(360deg);
-                          -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                        "
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24"
-                        class="iconify"
-                        data-icon="akar-icons:circle-minus-fill"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="book-price">
-                    <span>111.00</span>
-                    <span>جنيهًا</span>
-                  </div>
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
-                <button class="trash">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1em"
-                    height="1em"
-                    style="
-                      vertical-align: -0.125em;
-                      -ms-transform: rotate(360deg);
-                      -webkit-transform: rotate(360deg);
-                      transform: rotate(360deg);
-                    "
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 20 20"
-                    class="iconify"
-                    data-icon="fluent:delete-lines-20-filled"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.5 4a1.5 1.5 0 0 0-3 0zm-4 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-.808 7H11.5a1.5 1.5 0 0 0-1.118 2.5a1.5 1.5 0 0 0-.382 1c0 .384.144.735.382 1a1.5 1.5 0 0 0-.297 1.5H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1zm4 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"
-                    ></path>
-                  </svg>
-                </button>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
+                </div>
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
+                      >
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
+                </div>
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
+                      >
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
+                </div>
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
+                      >
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 mt-5">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="images/course-1.jpg" alt="course-1" />
+                </div>
+                <div class="course-card-body">
+                  <header>
+                    <div class="course-card-body-title">
+                      <h4>كورس الترم الثانى كاملاً - 1ث</h4>
+                      <hr />
+                      <p>1ث</p>
+                    </div>
+                    <div class="course-card-body-buttons">
+                      <a href="course.html"
+                        ><button class="button-outline">
+                          الدخول للكورس
+                        </button></a
+                      >
+                      <button class="button-fill">إشترك الأن!</button>
+                    </div>
+                  </header>
+                  <hr class="separated-line" />
+                  <footer>
+                    <div class="course-price">
+                      <span>111.00</span>
+                      <span>جنيهًا</span>
+                    </div>
+                    <div class="course-date">
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>السبت، ٢٧ أبريل ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--icon-park-twotone"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 48 48"
+                          >
+                            <defs>
+                              <mask id="iconifyReact10">
+                                <g
+                                  fill="none"
+                                  stroke="#fff"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="4"
+                                >
+                                  <path
+                                    fill="#555"
+                                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                                  ></path>
+                                  <path
+                                    d="M33.542 27c-1.274 4.057-5.064 7-9.542 7c-4.477 0-8.268-2.943-9.542-7v6m19.084-18v6c-1.274-4.057-5.064-7-9.542-7c-4.477 0-8.268 2.943-9.542 7"
+                                  ></path>
+                                </g>
+                              </mask>
+                            </defs>
+                            <path
+                              fill="currentColor"
+                              d="M0 0h48v48H0z"
+                              mask="url(#iconifyReact10)"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-1">
+                        <span>الاثنين، ٤ مارس ٢٠٢٤</span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ic"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m11.17 8l-.59-.59L9.17 6H4v12h16V8zM14 10h2v2h2v2h-2v2h-2v-2h-2v-2h2z"
+                              opacity=".3"
+                            ></path>
+                            <path
+                              fill="currentColor"
+                              d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m0 12H4V6h5.17l1.41 1.41l.59.59H20zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!--  End Books Section-->
-
-      <div>
-        <a
-          href="invoice.html"
-          class="d-flex align-items-center justify-content-center"
-        >
-          <div
-            class="go_to_invoice d-flex align-items-center justify-content-center"
-          >
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                focusable="false"
-                width="1em"
-                height="1em"
-                style="
-                  vertical-align: -0.125em;
-                  -ms-transform: rotate(360deg);
-                  -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                "
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-                class="iconify"
-                data-icon="uil:bill"
-              >
-                <path
-                  fill="currentColor"
-                  d="M9.5 10.5H12a1 1 0 0 0 0-2h-1V8a1 1 0 0 0-2 0v.55a2.5 2.5 0 0 0 .5 4.95h1a.5.5 0 0 1 0 1H8a1 1 0 0 0 0 2h1v.5a1 1 0 0 0 2 0v-.55a2.5 2.5 0 0 0-.5-4.95h-1a.5.5 0 0 1 0-1M21 12h-3V3a1 1 0 0 0-.5-.87a1 1 0 0 0-1 0l-3 1.72l-3-1.72a1 1 0 0 0-1 0l-3 1.72l-3-1.72a1 1 0 0 0-1 0A1 1 0 0 0 2 3v16a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1M5 20a1 1 0 0 1-1-1V4.73l2 1.14a1.08 1.08 0 0 0 1 0l3-1.72l3 1.72a1.08 1.08 0 0 0 1 0l2-1.14V19a3 3 0 0 0 .18 1Zm15-1a1 1 0 0 1-2 0v-5h2Z"
-                ></path>
-              </svg>
-            </div>
-            <p>مراجعة الفاتورة و الذهاب للدفع !</p>
-          </div>
-        </a>
       </div>
-    </div>
+    </section>
+    <!-- End Courses Section-->
+
+    <!-- Start Books Section -->
+    <section class="books my-5">
+      <div class="container">
+        <h2 class="section-title" data-title="الكتب الدراسية">
+          الكتب الدراسية
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="book_card">
+                <img
+                  src="images/books/book-1.jpg"
+                  class="card-img-top"
+                  alt="book-1"
+                />
+                <div class="card-body">
+                  <a href="book.html">
+                    <h5 class="card-title">
+                      كتاب الفصل الأول - أحياء - إيمان حسن
+                    </h5>
+                  </a>
+                  <hr />
+                  <p class="card-text">
+                    <span>يحتوي الكتاب على : </span>
+                    <span>شرح وتدريبات على الفصل الأول</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="book-counter">
+                    <button class="counter-operator operator-plus">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-plus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h4 class="mb-0 counter-number">0</h4>
+                    <button class="counter-operator operator-minus" disabled>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-minus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="book-price">
+                    <span>111.00</span>
+                    <span>جنيهًا</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="book_card">
+                <img
+                  src="images/books/book-1.jpg"
+                  class="card-img-top"
+                  alt="book-1"
+                />
+                <div class="card-body">
+                  <a href="book.html">
+                    <h5 class="card-title">
+                      كتاب الفصل الأول - أحياء - إيمان حسن
+                    </h5>
+                  </a>
+                  <hr />
+                  <p class="card-text">
+                    <span>يحتوي الكتاب على : </span>
+                    <span>شرح وتدريبات على الفصل الأول</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="book-counter">
+                    <button class="counter-operator operator-plus">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-plus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h4 class="mb-0 counter-number">0</h4>
+                    <button class="counter-operator operator-minus" disabled>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-minus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="book-price">
+                    <span>111.00</span>
+                    <span>جنيهًا</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="book_card">
+                <img
+                  src="images/books/book-1.jpg"
+                  class="card-img-top"
+                  alt="book-1"
+                />
+                <div class="card-body">
+                  <a href="book.html">
+                    <h5 class="card-title">
+                      كتاب الفصل الأول - أحياء - إيمان حسن
+                    </h5>
+                  </a>
+                  <hr />
+                  <p class="card-text">
+                    <span>يحتوي الكتاب على : </span>
+                    <span>شرح وتدريبات على الفصل الأول</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="book-counter">
+                    <button class="counter-operator operator-plus">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-plus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h4 class="mb-0 counter-number">0</h4>
+                    <button class="counter-operator operator-minus" disabled>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-minus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="book-price">
+                    <span>111.00</span>
+                    <span>جنيهًا</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="book_card">
+                <img
+                  src="images/books/book-1.jpg"
+                  class="card-img-top"
+                  alt="book-1"
+                />
+                <div class="card-body">
+                  <a href="book.html">
+                    <h5 class="card-title">
+                      كتاب الفصل الأول - أحياء - إيمان حسن
+                    </h5>
+                  </a>
+                  <hr />
+                  <p class="card-text">
+                    <span>يحتوي الكتاب على : </span>
+                    <span>شرح وتدريبات على الفصل الأول</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="book-counter">
+                    <button class="counter-operator operator-plus">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-plus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h4 class="mb-0 counter-number">0</h4>
+                    <button class="counter-operator operator-minus" disabled>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-minus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="book-price">
+                    <span>111.00</span>
+                    <span>جنيهًا</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="book_card">
+                <img
+                  src="images/books/book-1.jpg"
+                  class="card-img-top"
+                  alt="book-1"
+                />
+                <div class="card-body">
+                  <a href="book.html">
+                    <h5 class="card-title">
+                      كتاب الفصل الأول - أحياء - إيمان حسن
+                    </h5>
+                  </a>
+                  <hr />
+                  <p class="card-text">
+                    <span>يحتوي الكتاب على : </span>
+                    <span>شرح وتدريبات على الفصل الأول</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="book-counter">
+                    <button class="counter-operator operator-plus">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-plus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h4 class="mb-0 counter-number">0</h4>
+                    <button class="counter-operator operator-minus" disabled>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-minus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="book-price">
+                    <span>111.00</span>
+                    <span>جنيهًا</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="book_card">
+                <img
+                  src="images/books/book-1.jpg"
+                  class="card-img-top"
+                  alt="book-1"
+                />
+                <div class="card-body">
+                  <a href="book.html">
+                    <h5 class="card-title">
+                      كتاب الفصل الأول - أحياء - إيمان حسن
+                    </h5>
+                  </a>
+                  <hr />
+                  <p class="card-text">
+                    <span>يحتوي الكتاب على : </span>
+                    <span>شرح وتدريبات على الفصل الأول</span>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="book-counter">
+                    <button class="counter-operator operator-plus">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-plus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1m1 15a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h4 class="mb-0 counter-number">0</h4>
+                    <button class="counter-operator operator-minus" disabled>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="1em"
+                        height="1em"
+                        style="
+                          vertical-align: -0.125em;
+                          -ms-transform: rotate(360deg);
+                          -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                        "
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24"
+                        class="iconify"
+                        data-icon="akar-icons:circle-minus-fill"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M8 11a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="book-price">
+                    <span>111.00</span>
+                    <span>جنيهًا</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Books Section -->
 
     <!-- Start Footer -->
     <footer class="main-footer">
@@ -1156,8 +1769,63 @@
     </footer>
     <!-- End Footer -->
 
+    <script src="./js/tsparticles.bundle.min.js" defer></script>
+    <script src="./js/bgparticles.js" defer></script>
+
     <script>
       let operatorBtn = document.querySelectorAll(".counter-operator");
+      const header = document.querySelector("header");
+
+      // Move Image When Mouse Move
+      const moveImage = (e) => {
+        let h = header.clientHeight;
+        let w = header.clientWidth;
+        let i = (10 * e.pageX) / h - 1;
+        let o = (2 * e.pageY) / w - 1;
+        let s = 20 * o;
+        mainImage.style.transform = `translate(${i}px, ${s}px)`;
+      };
+
+      header.addEventListener("mousemove", moveImage);
+
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        preventClicks: false,
+
+        // autoplay: {
+        //   delay: 4000,
+        // },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          300: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+          767: {
+            slidesPerView: 2.2,
+            spaceBetween: 15,
+          },
+          992: {
+            slidesPerView: 3.2,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 4.2,
+            spaceBetween: 25,
+          },
+        },
+      });
 
       operatorBtn.forEach((btn) => {
         btn.addEventListener("click", () => {
