@@ -1548,15 +1548,19 @@ form button {
 .course-accordion .accordion-item {
   background-color: var(--theme-background);
 }
-.course-accordion .accordion-item .accordion-button {
+.course-accordion .accordion-item .accordion-header .accordion-button {
+  background-color: var(--theme-background);
+}
+.course-accordion > .accordion-item > .accordion-header .accordion-button {
   background-color: var(--theme-secondary-background);
   border-radius: 0.35rem;
 }
+
 .course-accordion .accordion-item .accordion-button::after {
   margin-right: auto;
   margin-left: 0;
 }
-.course-accordion .accordion-button:not(.collapsed) {
+.course-accordion > .accordion-button:not(.collapsed) {
   box-shadow: none;
   border: none;
   background: #ffe4e6;
@@ -1564,15 +1568,38 @@ form button {
 .course-accordion .accordion-button:focus {
   box-shadow: none;
 }
-.course-accordion .accordion-item .accordion-button svg {
+.course-accordion > .accordion-item > .accordion-header .accordion-button svg {
   color: var(--secondary-color);
   font-size: 3rem;
+}
+.course-accordion .accordion-item .accordion-header button div {
+  color: var(--theme-color);
 }
 .course-accordion .accordion-item .accordion-body {
   background-color: var(--theme-secondary-background);
   padding: 1.25rem;
   margin-top: 1rem;
   border-radius: 0.375rem;
+}
+.course-children-accordion .accordion-item .accordion-body {
+  background-color: var(--theme-background);
+}
+.course-accordion .accordion-button svg.video_icon,
+.course-accordion .accordion-button svg.book_icon {
+  color: #eab308;
+  font-size: 2rem;
+}
+.course-accordion .accordion-button svg.book_icon {
+  color: var(--primary-color);
+}
+.course-accordion .accordion-button svg.description_icon {
+  color: var(--secondary-color);
+}
+.course-accordion svg.description_icon {
+  color: var(--secondary-color);
+}
+.course-accordion svg.details_icon {
+  color: #eab308;
 }
 /*
   ==============================
