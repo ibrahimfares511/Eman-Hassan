@@ -290,7 +290,7 @@ body[data-theme="dark"] .logo.dark {
 }
 
 .main-header .buttons a,
-.navbar .buttons a,
+.navbar .buttons > a,
 form button {
   display: inline-flex;
   text-decoration: none;
@@ -310,22 +310,54 @@ form button {
 }
 
 .main-header .buttons a:first-child,
-.navbar .buttons a:first-child {
+.navbar .buttons > a:first-child {
   background: var(--secondary-color);
 }
 
 .main-header .buttons a:first-child:hover,
-.navbar .buttons a:first-child:hover {
+.navbar .buttons > a:first-child:hover {
   background: transparent;
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
 }
 
 .main-header .buttons a:last-child:hover,
-.navbar .buttons a:last-child:hover {
+.navbar .buttons > a:last-child:hover {
   background: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.navbar .buttons-afterLogin {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar .buttons-afterLogin .cart-button svg {
+  font-size: 2rem;
+}
+.navbar .buttons-afterLogin svg {
+  color: var(--primary-color);
+}
+
+.navbar .buttons-afterLogin img {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.navbar .buttons-afterLogin .cart-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 22px;
+  height: 22px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  justify-content: center;
 }
 
 /* Responsive */
@@ -983,7 +1015,8 @@ body[data-theme="dark"] .page_title {
   margin-top: 2rem;
 }
 .book_buttons button,
-.book_buttons a {
+.book_buttons a,
+.invoice-information .information-box a {
   padding: 0.75rem;
   border: none;
   border-radius: 10px;
@@ -998,7 +1031,8 @@ body[data-theme="dark"] .page_title {
 .book_buttons .add_to_cart {
   background: var(--primary-color);
 }
-.book_buttons .go_to_cart {
+.book_buttons .go_to_cart,
+.invoice-information .information-box a {
   background: var(--cyan-dark);
 }
 .book_buttons .book_notAvailable {
@@ -1220,6 +1254,138 @@ body[data-theme="dark"] .page_title {
   =====================
   === End Cart Page ===
   =====================
+*/
+
+/*
+  ==========================
+  === Start Invoice Page ===
+  ==========================
+*/
+.invoice-description {
+  margin-top: 1rem;
+  text-align: center;
+}
+.invoice-description p,
+.invoice-description span {
+  color: var(--bs-secondary);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.invoice-information .information-box {
+  background: var(--theme-secondary-background);
+}
+
+.invoice-information h2 {
+  color: var(--secondary-color);
+}
+
+.invoice-information hr {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.invoice-table thead tr th {
+  background-color: var(--primary-color);
+  color: white;
+}
+.invoice-table tfoot tr:last-child td {
+  background-color: var(--cyan-light);
+}
+
+/*
+  ==========================
+  === End Invoice Page ===
+  ==========================
+*/
+
+/*
+  ============================
+  === Start MyProfile Page ===
+  ============================
+*/
+.myProfile-content {
+  margin-top: -2rem;
+  padding: 3rem 1.5rem;
+  background: var(--theme-background);
+  position: relative;
+}
+.myProfile-content .content-header > div {
+  border-radius: 2rem;
+  background: var(--theme-background);
+  overflow: hidden;
+  width: fit-content;
+  padding-left: 2rem;
+  gap: 2rem;
+  border: 2px solid rgb(100 116 139 / 0.1);
+}
+.myProfile-content .content-header > div span:first-child {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+.myProfile-content .content-header > div span:last-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--theme-color);
+}
+.nav-pills {
+  --bs-nav-pills-link-active-bg: var(--primary-color);
+  width: 200px;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+.myProfile-tabs .nav-link {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 2px solid rgb(100 116 139 / 0.1);
+  color: var(--theme-color);
+  background: var(--theme-background);
+  text-align: right;
+}
+
+.myProfile-tabs table * {
+  text-wrap: nowrap;
+}
+.myProfile-tabs table tr th,
+.myProfile-tabs table tr td{
+  background: var(--theme-secondary-background);
+  color: var(--theme-color);
+  font-size: 0.8rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  align-content: center;
+}
+
+
+
+
+
+.csv-btn {
+  display: block;
+  width: fit-content;
+  border: none;
+  outline: none;
+  background-color: var(--cyan-dark);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 767.98px) {
+  .myProfile-tabs {
+    flex-direction: column;
+  }
+  .myProfile-tabs .nav-pills{
+    width: 100%;
+  }
+}
+
+/*
+  ==========================
+  === End MyProfile Page ===
+  ==========================
 */
 
 /*
@@ -1469,7 +1635,8 @@ form button {
   === Start Course Page Design ===
   ================================
 */
-.course-header {
+.course-header,
+.myProfile-header {
   padding: 6rem 2rem 14rem;
   background-image: url("../images/courseBg.png");
   background-size: cover;
@@ -1479,7 +1646,8 @@ form button {
   position: relative;
   margin: 0 1rem;
 }
-.course-header::after {
+.course-header::after,
+.myProfile-header::after {
   content: "";
   position: absolute;
   top: 0;
