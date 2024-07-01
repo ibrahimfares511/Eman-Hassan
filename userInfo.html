@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eman Hassan | Book Page</title>
+    <title>Eman Hassan | Register Page</title>
     <link rel="icon" type="image/x-icon" href="./images/logo.png" />
 
     <!-- Css Files -->
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="./css/choices.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Css Files -->
 
     <!-- Js Files -->
     <script src="./js/tsparticles.bundle.min.js" defer></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="./js/choices.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js" defer></script>
     <!-- Js Files -->
@@ -146,162 +150,123 @@
     <!-- End Navbar -->
 
     <div class="main_content" dir="rtl">
-      <!-- Start Page Title -->
-      <section class="page_title text-center">
-        <div class="container">
-          <h2 class="fs-1 fw-bold">مراجعة الفاتورة</h2>
-          <div class="invoice-description">
-            <p>راجع الفاتورة جيدًا قبل التأكيد و الذهاب للدفع</p>
-            <hr />
-            <span>اجمالي سعر الطلب بالتوصيل</span>
-            <div class="cart_total_price mt-4">
-              <span> 1000 </span>
-              <span> جنيهًا </span>
-            </div>
+      <div class="container">
+        <div class="row register">
+          <div class="col-lg-4 col-md-5">
+            <h2>Image</h2>
           </div>
-        </div>
-      </section>
-      <!-- End Page Title -->
-
-      <!-- Start Invoice Contant -->
-      <section class="invoice-information">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <div class="p-4 rounded shadow my-5 information-box">
-                <h2 class="fw-bold text-center">بيانات الاستلام</h2>
-                <hr class="my-4" />
-
-                <div class="">
-                  <div class="fs-5 py-2 d-flex gap-2">
-                    <div class="text-secondary pl-2 d-flex">
-                      الاسم <span class="pr-2">:</span>
-                    </div>
-                    <div>Ibrahim Fares</div>
-                  </div>
-
-                  <div class="fs-5 py-2 d-flex gap-2">
-                    <div class="text-secondary pl-2 d-flex">
-                      الهاتف الأساس <span class="pr-2">:</span>
-                    </div>
-                    <div>01007218535</div>
-                  </div>
-
-                  <div class="fs-5 py-2 d-flex gap-2">
-                    <div class="text-secondary pl-2 d-flex">
-                      المحافظة <span class="pr-2">:</span>
-                    </div>
-                    <div>Suez</div>
-                  </div>
-
-                  <div class="fs-5 py-2 d-flex gap-2">
-                    <div class="text-secondary pl-2 d-flex">
-                      المركز <span class="pr-2">:</span>
-                    </div>
-                    <div>Al-Galalah</div>
-                  </div>
-
-                  <div class="fs-5 py-2 d-flex gap-2">
-                    <div class="text-secondary pl-2 d-flex">
-                      العنوان <span class="pr-2">:</span>
-                    </div>
-                    <div>تانى شارع</div>
-                  </div>
-
-                  <div class="fs-5 py-2 d-flex gap-2">
-                    <div class="text-secondary pl-2 d-flex">
-                      الهاتف البديل <span class="pr-2">:</span>
-                    </div>
-                    <div>01007218534</div>
-                  </div>
-                </div>
-
-                <div class="my-3">
-                  <a href="userInfo.html">
-                    <span>تعديل بيانات الإستلام</span>
-                  </a>
-                </div>
+          <div class="col-lg-8 col-md-7">
+            <div class="login-form-header register-header">
+              <div class="login-form-header-title">
+                <span>تعديل</span>
+                <span> بيانات الاستلام :</span>
               </div>
+              <span class="login-form-header-image">
+                <img src="images/register.svg" alt="register-icon" />
+              </span>
             </div>
-            <div class="col-md-10 mx-auto">
-              <div class="invoice-table table-responsive">
-                <table class="table table-bordered mb-0">
-                  <thead>
-                    <tr>
-                      <th>م</th>
-                      <th>الاسم</th>
-                      <th>السعر</th>
-                      <th>العدد</th>
-                      <th>اجمالى السعر</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>مذكرة ليالي الامتحان - احياء - د. احمد الجوهرى</td>
-                      <td>70</td>
-                      <td>1</td>
-                      <td>70</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr class="table-dark">
-                      <td>-</td>
-                      <td>مصاريف الشحن</td>
-                      <td>50</td>
-                      <td>-</td>
-                      <td>50</td>
-                    </tr>
-                    <tr>
-                      <td>-</td>
-                      <td>الاجمالى</td>
-                      <td>-</td>
-                      <td>1</td>
-                      <td>120</td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <a
-                href="#"
-                class="d-flex align-items-center justify-content-center mt-4"
-              >
-                <div
-                  class="go_to_invoice d-flex align-items-center justify-content-center"
-                >
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="1em"
-                      height="1em"
-                      style="
-                        vertical-align: -0.125em;
-                        -ms-transform: rotate(360deg);
-                        -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-                      "
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 16 16"
-                      class="iconify"
-                      data-icon="bi:credit-card-fill"
+            <div class="login-form-header-body">
+              <p>ادخل بياناتك بشكل صحيح للحصول علي افضل تجربة لاستلام شحنتك</p>
+            </div>
+            <div class="form-content mt-4">
+              <form id="register_form">
+                <div class="row">
+                  <div class="col-12 my-3">
+                    <select
+                    class="form-select"
+                      id="governorate"
+                      onchange="updateCities()"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"
-                      ></path>
-                    </svg>
+                      <option value="">اختر محافظة</option>
+                    </select>
                   </div>
-                  <p>تأكيد الطلب و الذهاب للدفع !</p>
+
+                  <div class="col-12 my-3">
+                    <select class="form-select" id="city">
+                      <option value="">اختر مدينة</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-12 my-3">
+                    <div class="custom_input">
+                      <div class="bg"></div>
+                      <input
+                        type="text"
+                        required=""
+                        id="address"
+                        name="address"
+                      />
+                      <label for="address">
+                        <span class="label-icon">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 384 512"
+                            height="1rem"
+                            width="1rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span>العنوان</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 my-3">
+                    <div class="custom_input">
+                      <div class="bg"></div>
+                      <input
+                        type="text"
+                        required=""
+                        id="phone_number"
+                        name="phone_number"
+                      />
+                      <label for="phone_number">
+                        <span class="label-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true"
+                            role="img"
+                            class="iconify iconify--ant-design"
+                            width="1em"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 1024 1024"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M885.6 230.2L779.1 123.8a80.83 80.83 0 0 0-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L549.8 238.4a80.83 80.83 0 0 0-23.8 57.3c0 21.7 8.5 42.1 23.8 57.4l83.8 83.8A393.8 393.8 0 0 1 553.1 553A395.3 395.3 0 0 1 437 633.8L353.2 550a80.83 80.83 0 0 0-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L123.8 664.5a80.9 80.9 0 0 0-23.8 57.4c0 21.7 8.5 42.1 23.8 57.4l106.3 106.3c24.4 24.5 58.1 38.4 92.7 38.4c7.3 0 14.3-.6 21.2-1.8c134.8-22.2 268.5-93.9 376.4-201.7C828.2 612.8 899.8 479.2 922.3 344c6.8-41.3-6.9-83.8-36.7-113.8"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span>رقم هاتف بديل</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="login-link mt-4" style="color: #6b7280">
+                    <a href="profile.html" style="color: #2072b7"
+                      >العودة للملف الشخصى</a
+                    >
+                  </div>
+
+                  <div class="buttons">
+                    <button>
+                      <span> تأكيد </span>
+                    </button>
+                  </div>
                 </div>
-              </a>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Invoice Contant -->
+      </div>
     </div>
 
     <!-- Start Footer -->
@@ -428,5 +393,77 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <script>
+      const registerForm = document.querySelector("#register_form");
+
+      let governorates = [];
+        let cities = [];
+        let cityChoices;
+
+        async function fetchData() {
+            try {
+                // Fetch governorates data
+                const governoratesResponse = await fetch('./api/governorates.json');
+                governorates = await governoratesResponse.json();
+
+                // Fetch cities data
+                const citiesResponse = await fetch('./api/cities.json');
+                cities = await citiesResponse.json();
+
+                populateGovernorates();
+                // Apply Choices.js to the selects
+                new Choices('#governorate', { searchEnabled: true });
+                cityChoices = new Choices('#city', { searchEnabled: true });
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        function populateGovernorates() {
+            const governorateSelect = document.getElementById('governorate');
+            governorates.forEach(gov => {
+                const option = document.createElement('option');
+                option.value = gov.id;
+                option.textContent = gov.governorate_name_ar;
+                governorateSelect.appendChild(option);
+            });
+        }
+
+        function updateCities() {
+            const citySelect = document.getElementById('city');
+            cityChoices.clearStore(); // Clear previous choices
+            const selectedGovernorateId = document.getElementById('governorate').value;
+            if (selectedGovernorateId) {
+                const filteredCities = cities.filter(city => city.governorate_id === selectedGovernorateId);
+                filteredCities.forEach(city => {
+                    cityChoices.setChoices([{
+                        value: city.id,
+                        label: city.city_name_ar,
+                        selected: false,
+                        disabled: false,
+                    }], 'value', 'label', false);
+                });
+            }
+        }
+
+        // Fetch data on page load
+        document.addEventListener('DOMContentLoaded', fetchData);
+
+      registerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        Swal.fire({
+          title: "تم إنشاء حسابك بنجاح",
+          text: "اضغط حسنًا للإستمرار",
+          confirmButtonText: "حسنا",
+          icon: "success",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "login.html";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

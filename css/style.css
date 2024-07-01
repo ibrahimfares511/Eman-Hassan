@@ -67,6 +67,10 @@ body[data-theme="dark"] #tsparticles {
   background: #0f172a;
 }
 
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  z-index: 99;
+}
+
 /* Start Header */
 .main-header {
   width: 100vw;
@@ -1350,7 +1354,7 @@ body[data-theme="dark"] .page_title {
   text-wrap: nowrap;
 }
 .myProfile-tabs table tr th,
-.myProfile-tabs table tr td{
+.myProfile-tabs table tr td {
   background: var(--theme-secondary-background);
   color: var(--theme-color);
   font-size: 0.8rem;
@@ -1359,9 +1363,45 @@ body[data-theme="dark"] .page_title {
   align-content: center;
 }
 
+.personal-info .user-image {
+  width: 200px;
+}
+.personal-info .user-image img {
+  width: 100%;
+}
+.personal-info .user-info {
+  flex-grow: 1;
+}
+.personal-info .user-info hr {
+  border: 3px solid #dfe0e1;
+}
+.personal-info .user-info ul li {
+  margin-top: 0.5rem;
+  color: var(--theme-color);
+}
+.personal-info .user-info ul li:first-child svg {
+  color: var(--cyan-light);
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
+.personal-info .user-info ul li:last-child svg {
+  color: var(--bs-warning);
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
 
+.personal-profile section {
+  width: 75%;
+  margin: 2rem auto;
+  border-top: 3px solid rgb(6 182 212 / 50%);
+  padding-top: 2rem;
+}
 
-
+section .edit-link {
+  display: block;
+  width: fit-content;
+  margin-right: auto;
+}
 
 .csv-btn {
   display: block;
@@ -1377,7 +1417,7 @@ body[data-theme="dark"] .page_title {
   .myProfile-tabs {
     flex-direction: column;
   }
-  .myProfile-tabs .nav-pills{
+  .myProfile-tabs .nav-pills {
     width: 100%;
   }
 }

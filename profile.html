@@ -226,6 +226,7 @@
               role="tablist"
               aria-orientation="vertical"
             >
+              <!-- ملف المستخدم -->
               <button
                 class="nav-link active"
                 id="v-pills-home-tab"
@@ -238,6 +239,8 @@
               >
                 ملف المستخدم
               </button>
+
+              <!-- كورساتى -->
               <button
                 class="nav-link"
                 id="v-pills-profile-tab"
@@ -250,6 +253,8 @@
               >
                 كورساتى
               </button>
+
+              <!-- الفواتير -->
               <button
                 class="nav-link"
                 id="v-pills-messages-tab"
@@ -262,6 +267,8 @@
               >
                 الفواتير
               </button>
+
+              <!-- نتائج الامتحانات -->
               <button
                 class="nav-link"
                 id="v-pills-settings-tab"
@@ -280,16 +287,129 @@
               class="tab-content flex-grow-1 overflow-auto"
               id="v-pills-tabContent"
             >
+              <!-- ملف المستخدم -->
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade show active personal-profile"
                 id="v-pills-home"
                 role="tabpanel"
                 aria-labelledby="v-pills-home-tab"
                 tabindex="0"
               >
-                ملف المستخدم
+                <div class="personal-info d-flex align-items-center gap-3">
+                  <div class="user-image">
+                    <img src="./images/blank-profile.svg" alt="profile" />
+                  </div>
+                  <div class="user-info">
+                    <h3>Ibrahim Fares</h3>
+                    <hr />
+                    <ul class="list-unstyled pl-0">
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          aria-hidden="true"
+                          role="img"
+                          class="iconify iconify--ant-design"
+                          width="1em"
+                          height="1em"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 1024 1024"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M885.6 230.2L779.1 123.8a80.83 80.83 0 0 0-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L549.8 238.4a80.83 80.83 0 0 0-23.8 57.3c0 21.7 8.5 42.1 23.8 57.4l83.8 83.8A393.8 393.8 0 0 1 553.1 553A395.3 395.3 0 0 1 437 633.8L353.2 550a80.83 80.83 0 0 0-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L123.8 664.5a80.9 80.9 0 0 0-23.8 57.4c0 21.7 8.5 42.1 23.8 57.4l106.3 106.3c24.4 24.5 58.1 38.4 92.7 38.4c7.3 0 14.3-.6 21.2-1.8c134.8-22.2 268.5-93.9 376.4-201.7C828.2 612.8 899.8 479.2 922.3 344c6.8-41.3-6.9-83.8-36.7-113.8"
+                          ></path>
+                        </svg>
+                        <span>01007218535</span>
+                      </li>
+
+                      <li>
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          height="1rem"
+                          width="1rem"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M256 368a16 16 0 0 1-7.94-2.11L108 285.84a8 8 0 0 0-12 6.94V368a16 16 0 0 0 8.23 14l144 80a16 16 0 0 0 15.54 0l144-80a16 16 0 0 0 8.23-14v-75.22a8 8 0 0 0-12-6.94l-140.06 80.05A16 16 0 0 1 256 368z"
+                          ></path>
+                          <path
+                            d="M495.92 190.5v-.11a16 16 0 0 0-8-12.28l-224-128a16 16 0 0 0-15.88 0l-224 128a16 16 0 0 0 0 27.78l224 128a16 16 0 0 0 15.88 0L461 221.28a2 2 0 0 1 3 1.74v144.53c0 8.61 6.62 16 15.23 16.43A16 16 0 0 0 496 368V192a14.76 14.76 0 0 0-.08-1.5z"
+                          ></path>
+                        </svg>
+                        <span>الصف الأول</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <section class="delivery-info">
+                  <a
+                    href="userInfo.html"
+                    class="edit-link text-decoration-underline"
+                  >
+                    <span>تعديل</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      height="1rem"
+                      width="1rem"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="Edit">
+                        <g>
+                          <path
+                            d="M3.548,20.938h16.9a.5.5,0,0,0,0-1H3.548a.5.5,0,0,0,0,1Z"
+                          ></path>
+                          <path
+                            d="M9.71,17.18a2.587,2.587,0,0,0,1.12-.65l9.54-9.54a1.75,1.75,0,0,0,0-2.47l-.94-.93a1.788,1.788,0,0,0-2.47,0L7.42,13.12a2.473,2.473,0,0,0-.64,1.12L6.04,17a.737.737,0,0,0,.19.72.767.767,0,0,0,.53.22Zm.41-1.36a1.468,1.468,0,0,1-.67.39l-.97.26-1-1,.26-.97a1.521,1.521,0,0,1,.39-.67l.38-.37,1.99,1.99Zm1.09-1.08L9.22,12.75l6.73-6.73,1.99,1.99Zm8.45-8.45L18.65,7.3,16.66,5.31l1.01-1.02a.748.748,0,0,1,1.06,0l.93.94A.754.754,0,0,1,19.66,6.29Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                  <ul class="list-unstyled pl-0">
+                    <li class="fs-6 py-1 d-flex gap-2">
+                      <div class="text-secondary pl-2 d-flex">
+                        المحافظة <span class="pr-2">:</span>
+                      </div>
+                      <div>Suez</div>
+                    </li>
+
+                    <li class="fs-6 py-1 d-flex gap-2">
+                      <div class="text-secondary pl-2 d-flex">
+                        المركز <span class="pr-2">:</span>
+                      </div>
+                      <div>Al-Galalah</div>
+                    </li>
+
+                    <li class="fs-6 py-1 d-flex gap-2">
+                      <div class="text-secondary pl-2 d-flex">
+                        العنوان <span class="pr-2">:</span>
+                      </div>
+                      <div>تانى شارع</div>
+                    </li>
+
+                    <li class="fs-6 py-1 d-flex gap-2">
+                      <div class="text-secondary pl-2 d-flex">
+                        الهاتف البديل <span class="pr-2">:</span>
+                      </div>
+                      <div>01007218534</div>
+                    </li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h3 class="text-center">الداتا بتاعت الاحصائيات</h3>
+                </section>
               </div>
 
+              <!-- كورساتى -->
               <div
                 class="tab-pane fade overflow-hidden"
                 id="v-pills-profile"
@@ -504,6 +624,7 @@
                 </div>
               </div>
 
+              <!-- الفواتير -->
               <div
                 class="tab-pane fade"
                 id="v-pills-messages"
@@ -511,67 +632,62 @@
                 aria-labelledby="v-pills-messages-tab"
                 tabindex="0"
               >
-
-              <button class="csv-btn mb-3 me-auto">تحميل ملف اكسيل</button>
-              <div class="reports-table table-responsive rounded">
-                <table class="table table-striped mb-0">
-                  <thead>
-                    <tr>
-                      <th>التسلسل</th>
-                      <th>إجمالى سعر <br />الفاتورة</th>
-                      <th>التخفيض</th>
-                      <th>الكوبون</th>
-                      <th>عدد المشتريات</th>
-                      <th>المشتريات</th>
-                      <th>حالة الدفع</th>
-                      <th>وقت الدفع</th>
-                      <th>طريقة الدفع</th>
-                      <th>رقم الفاتورة</th>
-                      <th>
-                        وقت إنشاء<br />
-                        الفاتورة
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>598198</td>
-                      <td>130.00</td>
-                      <td>0.00</td>
-                      <td class="text-warning">--لا يوجد كوبون--</td>
-                      <td>1</td>
-                      <td>كورس الامتحان</td>
-                      <td><span class="badge text-bg-info">مدفوع</span></td>
-                      <td>الجمعة، ٣ مايو ٢٠٢٤</td>
-                      <td>fawry</td>
-                      <td>kroPYjM2En</td>
-                      <td>الجمعة، ٣ مايو ٢٠٢٤</td>
-                    </tr>
-                    <tr>
-                      <td>598198</td>
-                      <td>130.00</td>
-                      <td>0.00</td>
-                      <td class="text-warning">--لا يوجد كوبون--</td>
-                      <td>1</td>
-                      <td>كورس الامتحان</td>
-                      <td>
-                        <span class="badge text-bg-danger">pending</span>
-                      </td>
-                      <td class="text-warning">--لم يتم الدفع--</td>
-                      <td class="text-warning">--لم يتم الدفع--</td>
-                      <td>kroPYjM2En</td>
-                      <td>الثلاثاء، ١٩ مارس ٢٠٢٤</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <button class="csv-btn mb-3 me-auto">تحميل ملف اكسيل</button>
+                <div class="reports-table table-responsive rounded">
+                  <table class="table table-striped mb-0">
+                    <thead>
+                      <tr>
+                        <th>التسلسل</th>
+                        <th>إجمالى سعر <br />الفاتورة</th>
+                        <th>التخفيض</th>
+                        <th>الكوبون</th>
+                        <th>عدد المشتريات</th>
+                        <th>المشتريات</th>
+                        <th>حالة الدفع</th>
+                        <th>وقت الدفع</th>
+                        <th>طريقة الدفع</th>
+                        <th>رقم الفاتورة</th>
+                        <th>
+                          وقت إنشاء<br />
+                          الفاتورة
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>598198</td>
+                        <td>130.00</td>
+                        <td>0.00</td>
+                        <td class="text-warning">--لا يوجد كوبون--</td>
+                        <td>1</td>
+                        <td>كورس الامتحان</td>
+                        <td><span class="badge text-bg-info">مدفوع</span></td>
+                        <td>الجمعة، ٣ مايو ٢٠٢٤</td>
+                        <td>fawry</td>
+                        <td>kroPYjM2En</td>
+                        <td>الجمعة، ٣ مايو ٢٠٢٤</td>
+                      </tr>
+                      <tr>
+                        <td>598198</td>
+                        <td>130.00</td>
+                        <td>0.00</td>
+                        <td class="text-warning">--لا يوجد كوبون--</td>
+                        <td>1</td>
+                        <td>كورس الامتحان</td>
+                        <td>
+                          <span class="badge text-bg-danger">pending</span>
+                        </td>
+                        <td class="text-warning">--لم يتم الدفع--</td>
+                        <td class="text-warning">--لم يتم الدفع--</td>
+                        <td>kroPYjM2En</td>
+                        <td>الثلاثاء، ١٩ مارس ٢٠٢٤</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
-
-
-
-
-              </div>
-
+              <!-- نتائج الامتحانات -->
               <div
                 class="tab-pane fade"
                 id="v-pills-settings"
@@ -579,48 +695,56 @@
                 aria-labelledby="v-pills-settings-tab"
                 tabindex="0"
               >
-              <button class="csv-btn mb-3 me-auto">تحميل ملف اكسيل</button>
-              <div class="reports-table table-responsive rounded">
-                <table class="table table-striped mb-0">
-                  <thead>
-                    <tr>
-                      <th>التسلسل</th>
-                      <th>اسم الواجب</th>
-                      <th>عدد الاسئلة</th>
-                      <th>النتيجة</th>
-                      <th>عدد الاسئلة المحلولة</th>
-                      <th>عدد الاسئلة الصحيحة</th>
-                      <th>الاجابات</th>
-                      <th>وقت انهاء الواجب</th>
-                      <th>وقت بدأ الواجب</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>598198</td>
-                      <td>راجعه على الباب الرابع</td>
-                      <td>50</td>
-                      <td>0%</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td><button class="btn btn-info btn-sm">عرض الاجابات</button></td>
-                      <td>الجمعة، ٣ مايو ٢٠٢٤</td>
-                      <td>الجمعة، ٣ مايو ٢٠٢٤</td>
-                    </tr>
-                    <tr>
-                      <td>598198</td>
-                      <td>راجعه على الباب الرابع</td>
-                      <td>50</td>
-                      <td>0%</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td><button class="btn btn-info btn-sm">عرض الاجابات</button></td>
-                      <td>الجمعة، ٣ مايو ٢٠٢٤</td>
-                      <td>الجمعة، ٣ مايو ٢٠٢٤</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                <button class="csv-btn mb-3 me-auto">تحميل ملف اكسيل</button>
+                <div class="reports-table table-responsive rounded">
+                  <table class="table table-striped mb-0">
+                    <thead>
+                      <tr>
+                        <th>التسلسل</th>
+                        <th>اسم الواجب</th>
+                        <th>عدد الاسئلة</th>
+                        <th>النتيجة</th>
+                        <th>عدد الاسئلة المحلولة</th>
+                        <th>عدد الاسئلة الصحيحة</th>
+                        <th>الاجابات</th>
+                        <th>وقت انهاء الواجب</th>
+                        <th>وقت بدأ الواجب</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>598198</td>
+                        <td>راجعه على الباب الرابع</td>
+                        <td>50</td>
+                        <td>0%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>
+                          <button class="btn btn-info btn-sm">
+                            عرض الاجابات
+                          </button>
+                        </td>
+                        <td>الجمعة، ٣ مايو ٢٠٢٤</td>
+                        <td>الجمعة، ٣ مايو ٢٠٢٤</td>
+                      </tr>
+                      <tr>
+                        <td>598198</td>
+                        <td>راجعه على الباب الرابع</td>
+                        <td>50</td>
+                        <td>0%</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>
+                          <button class="btn btn-info btn-sm">
+                            عرض الاجابات
+                          </button>
+                        </td>
+                        <td>الجمعة، ٣ مايو ٢٠٢٤</td>
+                        <td>الجمعة، ٣ مايو ٢٠٢٤</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

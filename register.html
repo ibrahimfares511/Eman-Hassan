@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="./css/choices.min.css" />
+  
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Css Files -->
 
@@ -17,6 +19,7 @@
     <script src="./js/tsparticles.bundle.min.js" defer></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/sweetalert2.min.js"></script>
+    <script src="./js/choices.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js" defer></script>
     <!-- Js Files -->
@@ -319,7 +322,7 @@
                   </div>
 
                   <div class="col-12 my-3">
-                    <select id="city" class="form-control">
+                    <select id="city" class="form-select">
                       <option>الشرقية</option>
                       <option>القاهرة</option>
                       <option>الاسكندرية</option>
@@ -328,7 +331,7 @@
                   </div>
 
                   <div class="col-12 my-3">
-                    <select id="class_room" class="form-control">
+                    <select id="class_room" class="form-select">
                       <option>الصف الاول</option>
                       <option>الصف الثانى</option>
                       <option>الصف الثالث</option>
@@ -547,6 +550,14 @@
 
     <script>
       const registerForm = document.querySelector("#register_form");
+
+      document.addEventListener('DOMContentLoaded', function() {
+          // Initialize Choices.js on all elements with class 'form-select'
+          const selects = document.querySelectorAll('.form-select');
+          selects.forEach(select => {
+              new Choices(select, { searchEnabled: true });
+          });
+      });
 
       registerForm.addEventListener("submit", function (e) {
         e.preventDefault();
